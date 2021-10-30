@@ -120,11 +120,15 @@
     <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
     <script type="text/javascript">
       VK.init(function() {
+        alert(vk.id);
          unityInstance.SendMessage('Singlton', 'VKIDChange', vk.id);
       }, function() {
          // API initialization failed
          // Can reload page here
     }, '5.131');
+    function CheckLoad(){
+          alert("adsad");
+        }
     </script>
   </body>
 </html>
