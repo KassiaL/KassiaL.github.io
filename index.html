@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1080 height=2160></canvas>
+      <canvas id="unity-canvas" width=1080 height=2400></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -96,7 +96,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "1080px";
-        canvas.style.height = "2160px";
+        canvas.style.height = "2400px";
       }
 
       loadingBar.style.display = "block";
@@ -121,6 +121,7 @@
     <script type="text/javascript">
       VK.init(function() {
         // unityInstance.SendMessage('Singlton', 'VKIDChange', vk.id);
+      //  https://oauth.vk.com/access_token?client_id= + 7969486 + &client_secret= + 314d8ff0314d8ff0314d8ff03a3134153e3314d314d8ff050134c28a045417bfdee3b07 + &v=5.131&grant_type=client_credentials
       }, function() {
          // API initialization failed
          // Can reload page here
