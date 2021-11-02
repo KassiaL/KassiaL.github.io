@@ -118,10 +118,10 @@
       document.body.appendChild(script);
     </script>
     <script>
-      import bridge from '@vkontakte/vk-bridge/jest.config';
+      import bridge from '@vkontakte/vk-bridge';
 
 // Sends event to client
-bridge.send('VKWebAppInit', {});
+bridge.send("VKWebAppInit", {});
 
 /*bridge.send("VKWebAppShowWallPostBox", {
   "message": "Hello!",
