@@ -123,7 +123,13 @@
 // Sends event to client
 bridge.send('VKWebAppInit');
 
-bridge.send("VKWebAppShare", {"link": "https://vk.com/app7969486"});
+bridge.send("VKWebAppShowWallPostBox", {
+  "message": "Hello!",
+  "attachments": "https://habr.com"
+});
+/*bridge.send("VKWebAppShowInviteBox", {})
+         .then(data => console.log(data.success))
+        .catch(error => console.log(error));*/
     </script>
   </body>
 </html>
