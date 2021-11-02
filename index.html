@@ -121,7 +121,7 @@
       import bridge from '@vkontakte/vk-bridge';
 
 // Sends event to client
-bridge.send('VKWebAppInit');
+bridge.send('VKWebAppInit', {});
 
 /*bridge.send("VKWebAppShowWallPostBox", {
   "message": "Hello!",
