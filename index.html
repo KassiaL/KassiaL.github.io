@@ -123,8 +123,7 @@
 // Sends event to client
 bridge.send('VKWebAppInit');
 
-// Subscribes to event, sended by client
-bridge.subscribe(e => console.log(e));
+bridge.send("VKWebAppShare", {"link": "https://vk.com/app7969486"});
     </script>
   </body>
 </html>
