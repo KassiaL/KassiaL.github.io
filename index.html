@@ -118,10 +118,9 @@
       document.body.appendChild(script);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
-<script>
-const bridge = vkBridge.default;
-bridge.subscribe((e) => console.log("vkBridge event", e));
-bridge.send("VKWebAppInit", {});
-</script>
+    <script>
+    const bridge = vkBridge.default;
+    bridge.send("VKWebAppInit", {});
+    </script>
   </body>
 </html>
