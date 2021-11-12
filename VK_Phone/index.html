@@ -90,8 +90,6 @@
 
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
-
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
@@ -122,11 +120,6 @@
         const bridge = vkBridge.default;
         bridge.send("VKWebAppInit", {});
         const service = "314d8ff0314d8ff0314d8ff03a3134153e3314d314d8ff050134c28a045417bfdee3b07";
-
-
-
-        
-        bridge.send("VKWebAppCallAPIMethod", { "method": "secure.addAppEvent", "request_id": "32test", "params": {"user_id" : "1", "activity_id": "1", "value" : "10", "v":"5.81", "access_token": service}});
         </script>
   </body>
 </html>
