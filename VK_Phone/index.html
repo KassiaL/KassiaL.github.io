@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
+      var loaderUrl = buildUrl + "/VK_Phone.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGLBuild.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGLBuild.wasm.unityweb",
+        dataUrl: buildUrl + "/VK_Phone.data.unityweb",
+        frameworkUrl: buildUrl + "/VK_Phone.framework.js.unityweb",
+        codeUrl: buildUrl + "/VK_Phone.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Salt.Games",
         productName: "Chinese Holiday",
-        productVersion: "0.2",
+        productVersion: "0.3",
         showBanner: unityShowBanner,
       };
 
@@ -90,6 +90,8 @@
 
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
+
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
@@ -115,11 +117,14 @@
       };
       document.body.appendChild(script);
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
-        <script>
-        const bridge = vkBridge.default;
-        bridge.send("VKWebAppInit", {});
-        const service = "314d8ff0314d8ff0314d8ff03a3134153e3314d314d8ff050134c28a045417bfdee3b07";
-        </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
+<script>
+const bridge = vkBridge.default;
+bridge.send("VKWebAppInit", {});
+const service = "013fc4a9013fc4a9013fc4a93e01467d360013f013fc4a96054f82ad37e5f15f0c238c3";
+let ID = 0;
+bridge.send("VKWebAppGetUserInfo").then(function(dat){ ID = dat.id; });
+</script>
   </body>
 </html>
