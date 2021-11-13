@@ -124,7 +124,9 @@ const bridge = vkBridge.default;
 bridge.send("VKWebAppInit", {});
 const service = "013fc4a9013fc4a9013fc4a93e01467d360013f013fc4a96054f82ad37e5f15f0c238c3";
 let ID = 0;
+let init = 0;
 bridge.send("VKWebAppGetUserInfo").then(function(dat){ ID = dat.id; });
+</script>
 </script>
   </body>
 </html>
