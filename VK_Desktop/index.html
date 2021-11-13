@@ -2,7 +2,6 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Chinese Holiday</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
@@ -117,8 +116,8 @@
         });
       };
       document.body.appendChild(script);
-      canvas.width = document.body.clientWidth;
-canvas.height = document.body.clientHeight;
+      canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
     <script>
