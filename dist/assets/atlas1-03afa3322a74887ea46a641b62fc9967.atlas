@@ -1,0 +1,90 @@
+
+atlas1.png
+size: 2048, 2048
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+big_bullet
+  rotate: false
+  xy: 1470, 130
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+circle
+  rotate: false
+  xy: 1084, 1124
+  size: 896, 896
+  orig: 896, 896
+  offset: 0, 0
+  index: -1
+fon
+  rotate: false
+  xy: 2, 100
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+greenbtn
+  rotate: false
+  xy: 1084, 130
+  size: 384, 192
+  orig: 384, 192
+  offset: 0, 0
+  index: -1
+kakashka
+  rotate: false
+  xy: 1690, 736
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 1690, 930
+  size: 192, 192
+  orig: 192, 192
+  offset: 0, 0
+  index: -1
+quad
+  rotate: false
+  xy: 1982, 1988
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+redbtn
+  rotate: false
+  xy: 1084, 324
+  size: 384, 192
+  orig: 384, 192
+  offset: 0, 0
+  index: -1
+small_bullet
+  rotate: false
+  xy: 1884, 1026
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+tualet
+  rotate: false
+  xy: 1084, 518
+  size: 604, 604
+  orig: 604, 604
+  offset: 0, 0
+  index: -1
+voskl
+  rotate: false
+  xy: 2, 2
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+yellowbtn
+  rotate: false
+  xy: 1470, 324
+  size: 384, 192
+  orig: 384, 192
+  offset: 0, 0
+  index: -1
