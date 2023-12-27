@@ -17,7 +17,7 @@ update_frequency = 0
 swap_interval = 1
 vsync = 1
 display_profiles = /builtins/render/default.display_profilesc
-dynamic_orientation = 0
+dynamic_orientation = 1
 display_device_info = 0
 
 [render]
@@ -83,7 +83,7 @@ repeat_delay = 0.5
 repeat_interval = 0.2
 gamepads = /builtins/input/default.gamepadsc
 game_binding = /input/game.input_bindingc
-use_accelerometer = 1
+use_accelerometer = 0
 
 [sprite]
 max_count = 512
