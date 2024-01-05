@@ -6,6 +6,7 @@ compress_archive = 1
 publisher = unnamed
 developer = Firestorm
 custom_resources = /assets/levels,/assets/polyglot.csv
+bundle_resources = /modules/inst_bridge
 title_as_file_name = Colors
 
 [display]
