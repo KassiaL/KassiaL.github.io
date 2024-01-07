@@ -6,7 +6,7 @@ compress_archive = 1
 publisher = unnamed
 developer = Firestorm
 custom_resources = /assets/levels,/assets/polyglot.csv
-bundle_resources = /modules/inst_bridge
+bundle_resources = /modules/inst_bridge,/render/bundle
 title_as_file_name = Colors
 
 [display]
@@ -118,11 +118,18 @@ max_count = 128
 max_count = 128
 
 [ios]
+app_icon_120x120 = /res/ios/120.png
+app_icon_180x180 = /res/ios/180.png
+app_icon_76x76 = /res/ios/76.png
+app_icon_152x152 = /res/ios/152.png
+app_icon_167x167 = /res/ios/167.png
+icons_asset = /res/ios/Assets.car
 launch_screen = /builtins/manifests/ios/LaunchScreen.storyboardc
 pre_renderered_icons = 0
-bundle_identifier = example.unnamed
-bundle_name = 
-infoplist = /builtins/manifests/ios/Info.plist
+bundle_identifier = com.firestorm.colors
+bundle_name = 1
+bundle_version = 1
+infoplist = /render/Info.plist
 default_language = en
 localizations = en
 
@@ -160,7 +167,7 @@ app_icon =
 [html5]
 custom_heap_size = 0
 heap_size = 256
-htmlfile = /engine_bridge.html
+htmlfile = /engine_bridge_vk.html
 cssfile = /builtins/manifests/web/dark_theme.css
 splash_image = /assets/logo.png
 archive_location_prefix = archive

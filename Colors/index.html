@@ -128,10 +128,24 @@
 		JsToDef.send("inited");
 	}
 
-	window.init = function (){
+	window.shareGame = function() {
+		let shareOptions = {
+			'vk': {
+				link: 'https://vk.com/wordle.game'
+			}
+		}
+		bridge.social.share(shareOptions)
+		.then(() => {
+			// Игрок успешно поделился
+		})
+		.catch(error => {
+			// Ошибка, что-то пошло не так
+		})
+	}
 
+	window.init = function (){
 		bridge
-			.initialize({ platforms: { 'game_distribution': { gameId: '74473b0d8a42415db75fef0a005b9654' } } })
+			.initialize({ forciblySetPlatformId: bridge.PLATFORM_ID.VK })
 			.then(() => {
 				bridge.advertisement.on(bridge.EVENT_NAME.INTERSTITIAL_STATE_CHANGED, state => {
 					if (state == "closed" || state == "failed") {
@@ -153,7 +167,8 @@
 
 				JsToDef.send("language", bridge.platform.language);
 				endInitedFunc();
-				bridge.platform.sendMessage("game_ready")
+				JsToDef.send("id_platform", "vk");
+				//bridge.platform.sendMessage("game_ready")
 				bridge.advertisement.setMinimumDelayBetweenInterstitial(0)
 		})
 	}
