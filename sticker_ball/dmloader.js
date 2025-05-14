@@ -101,6 +101,8 @@ var CUSTOM_PARAMETERS = {
     
         var dpi = 1;
     
+        dpi = window.devicePixelRatio || 1;
+    
         app_container.style.width = width + "px";
         app_container.style.height = height + buttonHeight + "px";
         game_canvas.width = Math.floor(width * dpi);
