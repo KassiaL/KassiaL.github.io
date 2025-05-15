@@ -122,6 +122,7 @@
 	</style>
   <script src="./playgama-bridge.js"></script>
   <script type="text/javascript">
+        window.is_bridge_inited = false
         bridge.initialize().then(() => {
 
             const AD_OPENED = 0
@@ -150,15 +151,7 @@
                 }
             )
 
-            window.get_server_time = function () {
-                bridge.platform.getServerTime()
-                    .then(result => {
-                        JsToDef.send("server_time_millis", result)
-                    })
-                    .catch(error => {
-
-                    })
-            }
+            window.is_bridge_inited = true
 
         }).catch(error => {
             console.log("error when initialize bridge");
