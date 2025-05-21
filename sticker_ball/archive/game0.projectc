@@ -7,6 +7,7 @@ compress_archive = 1
 publisher = Sergey Kurbyko
 developer = Sergey Kurbyko
 custom_resources = /assets/bundles/polyglot.csv
+bundle_resources = /res
 title_as_file_name = StickerBall
 
 [display]
@@ -162,8 +163,8 @@ app_icon =
 [html5]
 custom_heap_size = 0
 heap_size = 256
-htmlfile = /builtins/manifests/web/engine_template.html
-cssfile = /builtins/manifests/web/dark_theme.css
+htmlfile = /engine_template.html
+cssfile = /dark_theme.css
 archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = --verify-graphics-calls=false
