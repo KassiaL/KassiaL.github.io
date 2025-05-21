@@ -251,87 +251,6 @@
 	</style>
   <script src="./playgama-bridge.js"></script>
   <script type="text/javascript">
-        // window.array_to_lua_table_string = function (array) {
-        //     let result = "{";
-        //     for (let i = 0; i < array.length; i++) {
-        //         const value = array[i];
-
-        //         // Handle different value types
-        //         if (typeof value === 'string') {
-        //             // Escape single quotes in strings
-        //             const escapedStr = value.replace(/'/g, "\\'");
-        //             result += "'" + escapedStr + "'";
-        //         } else if (typeof value === 'number') {
-        //             result += value;
-        //         } else if (typeof value === 'boolean') {
-        //             result += value ? "true" : "false";
-        //         } else if (value === null || value === undefined) {
-        //             result += "nil";
-        //         } else if (Array.isArray(value)) {
-        //             // Recursively handle nested arrays
-        //             result += window.array_to_lua_table_string(value);
-        //         } else if (typeof value === 'object') {
-        //             // Handle objects by converting to array-based table with pairs
-        //             result += window.object_to_lua_table_string(value);
-        //         }
-
-        //         if (i < array.length - 1) {
-        //             result += ",";
-        //         }
-        //     }
-        //     result += "}";
-        //     return result;
-        // }
-
-        // window.object_to_lua_table_string = function (obj) {
-        //     if (!obj) return "{}";
-
-        //     let result = "{";
-        //     let first = true;
-
-        //     for (const key in obj) {
-        //         if (obj.hasOwnProperty(key)) {
-        //             if (!first) {
-        //                 result += ",";
-        //             }
-        //             first = false;
-
-        //             const value = obj[key];
-
-        //             // Handle the key (formatting as a string key)
-        //             result += "[";
-        //             if (isNaN(key)) {
-        //                 // String key needs quotes
-        //                 const escapedKey = key.replace(/'/g, "\\'");
-        //                 result += "'" + escapedKey + "'";
-        //             } else {
-        //                 // Numeric key doesn't need quotes
-        //                 result += key;
-        //             }
-        //             result += "]=";
-
-        //             // Handle the value based on its type
-        //             if (typeof value === 'string') {
-        //                 const escapedStr = value.replace(/'/g, "\\'");
-        //                 result += "'" + escapedStr + "'";
-        //             } else if (typeof value === 'number') {
-        //                 result += value;
-        //             } else if (typeof value === 'boolean') {
-        //                 result += value ? "true" : "false";
-        //             } else if (value === null || value === undefined) {
-        //                 result += "nil";
-        //             } else if (Array.isArray(value)) {
-        //                 result += window.array_to_lua_table_string(value);
-        //             } else if (typeof value === 'object') {
-        //                 result += window.object_to_lua_table_string(value);
-        //             }
-        //         }
-        //     }
-
-        //     result += "}";
-        //     return result;
-        // }
-
         window.is_bridge_inited = false
         bridge.initialize().then(() => {
 
@@ -343,7 +262,6 @@
             bridge.advertisement.on(
                 bridge.EVENT_NAME.REWARDED_STATE_CHANGED,
                 state => {
-                    console.log('Rewarded state: ', state)
                     if (state === "opened") JsToDef.send("rew_state", AD_OPENED)
                     else if (state === "closed") JsToDef.send("rew_state", AD_CLOSED)
                     else if (state === "rewarded") JsToDef.send("rew_state", AD_REWARDED)
@@ -354,7 +272,6 @@
             bridge.advertisement.on(
                 bridge.EVENT_NAME.INTERSTITIAL_STATE_CHANGED,
                 state => {
-                    console.log('Interstitial state: ', state)
                     if (state === "opened") JsToDef.send("inter_state", AD_OPENED)
                     else if (state === "closed") JsToDef.send("inter_state", AD_CLOSED)
                     else if (state === "failed") JsToDef.send("inter_state", AD_FAILED)
@@ -400,6 +317,9 @@
    </div>
   </div>
   <script>
+		window.my_vk_app_link = "https://kassial.github.io/sticker_ball/"
+		window.image_base_64 = ""
+
 		function getPreferredLanguage() {
 				const supportedLanguages = ['en', 'ru', 'tr', 'pt', 'es', 'pt-br'];
 				const normalizedSupported = supportedLanguages.map(lang => lang.toLowerCase());
