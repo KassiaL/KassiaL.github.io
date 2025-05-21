@@ -371,37 +371,54 @@
  </head>
  <body>
   <div id="app-container" class="canvas-app-container">
-   <div id="app-container" class="canvas-app-container">
-    <div class="progress-container"><img id="randomImage" src="" class="progress-icon" alt="Icon">
-     <div class="progress-bar">
-      <div class="progress-fill">
-       <div class="tooltip-box">
-        <div class="progress-tooltip">
-         0% 
-         <div class="tooltip-arrow"></div>
-        </div>
+   <div class="progress-container"><img id="randomImage" src="" class="progress-icon" alt=" ">
+    <div class="progress-bar">
+     <div class="progress-fill">
+      <div class="tooltip-box">
+       <div class="progress-tooltip">
+        0% 
+        <div class="tooltip-arrow"></div>
        </div>
       </div>
      </div>
-     <div class="loading-text">
-      Loading<br><span>Please Wait...</span>
-     </div>
     </div>
-    <div id="running-from-file-warning" style="display: none; margin: 3em;">
-     <h1>Running from local file ⚠️</h1>
-     <p>It seems like you have opened this file by double-clicking on it. In order to test your build in a browser <b>you need to load this file from a web server</b>. You can either upload this file and the rest of the files from a Defold HTML5 bundle to a web hosting service OR host them using a local web server on your home network.</p>
-     <p><a href="https://defold.com/manuals/html5/#testing-html5-build" target="_blank">Learn more about running a local web server in the Defold HTML5 manual</a>.</p>
-    </div>
-    <div id="webgl-not-supported" style="display: none; margin: 3em;">
-     <h1>WebGL not supported ⚠️</h1>
-     <p>WebGL is not supported by your browser - visit <a href="https://get.webgl.org/">https://get.webgl.org/</a> to learn more.</p>
-    </div>
-    <div id="canvas-container" class="canvas-app-canvas-container">
-     <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1920" height="1080"></canvas>
+    <div class="loading-text" id="loading-text">
+     <br><span id="loading-text-span"></span>
     </div>
    </div>
-   <script>
-		function getRandomImagePath() {
+   <div id="running-from-file-warning" style="display: none; margin: 3em;">
+    <h1>Running from local file ⚠️</h1>
+    <p>It seems like you have opened this file by double-clicking on it. In order to test your build in a browser <b>you need to load this file from a web server</b>. You can either upload this file and the rest of the files from a Defold HTML5 bundle to a web hosting service OR host them using a local web server on your home network.</p>
+    <p><a href="https://defold.com/manuals/html5/#testing-html5-build" target="_blank">Learn more about running a local web server in the Defold HTML5 manual</a>.</p>
+   </div>
+   <div id="webgl-not-supported" style="display: none; margin: 3em;">
+    <h1>WebGL not supported ⚠️</h1>
+    <p>WebGL is not supported by your browser - visit <a href="https://get.webgl.org/">https://get.webgl.org/</a> to learn more.</p>
+   </div>
+   <div id="canvas-container" class="canvas-app-canvas-container">
+    <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1920" height="1080"></canvas>
+   </div>
+  </div>
+  <script>
+		function getPreferredLanguage() {
+				const supportedLanguages = ['en', 'ru', 'tr', 'pt', 'es', 'pt-br'];
+				const normalizedSupported = supportedLanguages.map(lang => lang.toLowerCase());
+				const browserLangs = navigator.languages || [navigator.language || 'en'];
+				for (const lang of browserLangs) {
+					const [baseLang, region] = lang.toLowerCase().split(/[-_]/);
+					const fullLang = region ? `${baseLang}-${region}` : baseLang;
+					const exactMatchIndex = normalizedSupported.indexOf(fullLang);
+					if (exactMatchIndex !== -1) {
+						return supportedLanguages[exactMatchIndex];
+					}
+					const baseMatchIndex = normalizedSupported.indexOf(baseLang);
+					if (baseMatchIndex !== -1) {
+						return supportedLanguages[baseMatchIndex];
+					}
+				}
+				return 'en';
+			}
+			function getRandomImagePath() {
 				const randomNumber = Math.floor(Math.random() * 180) + 1;
 				const paddedNumber = String(randomNumber).padStart(3, '0');
 				return `stickers/${paddedNumber}.png`;
@@ -409,10 +426,43 @@
 			document.addEventListener("DOMContentLoaded", () => {
 				const img = document.getElementById("randomImage");
 				img.src = getRandomImagePath();
+
+				const lang = getPreferredLanguage();
+				const loadingText = document.getElementById("loading-text");
+				const loadingTextSpan = document.getElementById("loading-text-span");
+				switch (lang) {
+					case 'ru':
+						loadingTextSpan.innerHTML = "Пожалуйста, подождите...";
+						loadingText.innerHTML = "Загрузка" + loadingText.innerHTML;
+						break;
+					case 'en':
+						loadingTextSpan.innerHTML = "Please wait...";
+						loadingText.innerHTML = "Loading" + loadingText.innerHTML;
+						break;
+					case 'tr':
+						loadingTextSpan.innerHTML = "Lütfen bekleyin...";
+						loadingText.innerHTML = "Yükleniyor" + loadingText.innerHTML;
+						break;
+					case 'pt':
+						loadingTextSpan.innerHTML = "Por favor, aguarde...";
+						loadingText.innerHTML = "Carregando" + loadingText.innerHTML;
+						break;
+					case 'es':
+						loadingTextSpan.innerHTML = "Por favor, espere...";
+						loadingText.innerHTML = "Cargando" + loadingText.innerHTML;
+						break;
+					case 'pt-br':
+						loadingTextSpan.innerHTML = "Por favor, aguarde...";
+						loadingText.innerHTML = "Carregando" + loadingText.innerHTML;
+						break;
+					default:
+						loadingTextSpan.innerHTML = "Please wait...";
+						loadingText.innerHTML = "Loading" + loadingText.innerHTML;
+				}
 			});
-		</script> <!-- -->
-   <script id="engine-loader" type="text/javascript" src="dmloader.js"></script>
-   <script id="engine-setup" type="text/javascript">
+		</script>
+  <script id="engine-loader" type="text/javascript" src="dmloader.js"></script>
+  <script id="engine-setup" type="text/javascript">
 
 		CUSTOM_PARAMETERS['update_progress'] = function (progress) {
 			const fill = document.querySelector('.progress-fill');
@@ -423,7 +473,7 @@
 			tooltip.innerHTML = `${fill_percent}%<div class="tooltip-arrow"></div>`;
 		}
 	</script>
-   <script id="engine-start" type="text/javascript">
+  <script id="engine-start" type="text/javascript">
 		var runningFromFileWarning = document.getElementById("running-from-file-warning");
 		if (window.location.href.startsWith("file://")) {
 			runningFromFileWarning.style.display = "block";
@@ -433,6 +483,5 @@
 			runningFromFileWarning.parentNode.removeChild(runningFromFileWarning);
 		}
 	</script>
-  </div>
  </body>
 </html>
