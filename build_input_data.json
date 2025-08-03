@@ -1,0 +1,41 @@
+{
+  "project_git" : {
+    "sha1" : "dab404e8bba3f3485926c364ecbb51b026b6c54a",
+    "origin" : "https://github.com/KassiaL/My_Little_Universe.git",
+    "branch" : "master"
+  },
+  "bob_arguments" : {
+    "sha1" : "1c76521bb8b08c63ef619aa8a5ab563dddf7b3cf",
+    "version" : "1.10.3",
+    "timestamp" : "2025-07-07 08:52:51"
+  },
+  "defold_sdk" : "1c76521bb8b08c63ef619aa8a5ab563dddf7b3cf",
+  "dependencies" : [ {
+    "link" : "https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip",
+    "md5" : "6145181B4CF7433B8E156A965EE0CBB0"
+  }, {
+    "link" : "https://github.com/Insality/druid/archive/refs/tags/1.1.4.zip",
+    "md5" : "575D68D7E843B74BFBBC39F3847395AB"
+  }, {
+    "link" : "https://github.com/Insality/panthera/archive/refs/tags/runtime.4.zip",
+    "md5" : "B15715041B3BC5FB324796ACB77277BB"
+  }, {
+    "link" : "https://github.com/subsoap/defsave/archive/master.zip",
+    "md5" : "19999A19A9A9E492007336E297EE713C"
+  }, {
+    "link" : "https://github.com/britzl/monarch/archive/master.zip",
+    "md5" : "7AB3569065B8AC29C32DACCDFB84EA33"
+  }, {
+    "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
+    "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+  }, {
+    "link" : "https://github.com/subsoap/defos/archive/refs/tags/v2.8.3.zip",
+    "md5" : "3A79AEE85DA1EC58B4CAB58E1D85B395"
+  }, {
+    "link" : "https://github.com/Insality/defold-tweener/archive/refs/tags/3.zip",
+    "md5" : "CFB85626C718FEA631D61A22BF55E70C"
+  }, {
+    "link" : "https://github.com/d954mas/defold-box2d/archive/refs/tags/1.0.3.zip",
+    "md5" : "84AD75253F3EBC68115BD3C547320877"
+  } ]
+}
