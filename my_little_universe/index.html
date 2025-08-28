@@ -403,5 +403,22 @@
 			runningFromFileWarning.parentNode.removeChild(runningFromFileWarning);
 		}
 	</script>
+  <script id="reszip-setup" type="text/javascript">
+            // 
+
+            var old_callMain = Module._callMain;
+            var reszip_preloadingStarted = false;
+            Module._callMain = function () {
+                // 
+
+                // 
+                if (!reszip_preloadingStarted) {
+                    _dmResZipRequestFileAsync("hd_1.zip");
+                    reszip_preloadingStarted = true;
+                }
+                // 
+                old_callMain();
+            };
+        </script>
  </body>
 </html>
