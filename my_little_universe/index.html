@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui, shrink-to-fit=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Universe 0.0.1</title>
+  <style type="text/css">
+	/* Disable user selection to avoid strange bug in Chrome on Windows:
+	* Selecting a text outside the canvas, then clicking+draging would
+	* drag the selected text but block mouse down/up events to the engine.
+	*/
+	body {
+	
+		position: fixed; /* Prevent overscroll */
+	
+		margin:0;
+		padding:0;
+	}
+
+	.canvas-app-container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	.canvas-app-container:-webkit-full-screen {
+		/* Auto width and height in Safari/Chrome fullscreen. */
+		width: auto;
+		height: auto;
+	}
+
+	#canvas {
+		outline: none;
+		border: 0;
+		width: 100%;
+		vertical-align: bottom;
+	}
+
+	#canvas-container {
+		position: relative;
+	}
+
+	canvas:focus, canvas:active {
+		outline: none;
+		border: 0;
+		ie-dummy: expression(this.hideFocus=true);
+		-moz-outline-style: none;
+	}
+
+	body, div {
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.canvas-app-progress {
+	display: none;
+	/* position: fixed;
+	top: calc(50% + 100px);
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	background-color: #1a1a1a;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+	width: 300px;
+	height: 25px;
+	box-shadow: 
+		inset 0 0 12px rgba(0,0,0,0.4),
+		0 0 20px rgba(15, 255, 0, 0.2); 
+	border: 1px solid rgba(15, 255, 0, 0.3); */
+}
+
+.canvas-app-progress-bar {
+	display: none;
+	/* position: relative;
+	font-size: 12px;
+	height: 100%;
+	width: 0%;
+	background-color: #0fff00;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 20px;
+	transition: width 1s ease;
+	transform: none !important;
+	background: linear-gradient(
+		90deg,
+		rgba(15, 255, 0, 1) 0%,
+		rgba(100, 255, 50, 1) 100%
+	); 
+	box-shadow: 
+		inset 0 2px 4px rgba(255,255,255,0.3),
+		0 0 15px rgba(15, 255, 0, 0.4); 
+	position: relative;
+	overflow: hidden; */
+}
+
+	body {
+		background-color: #000000;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	.canvas-app-container {
+		background: linear-gradient(to bottom,
+					#ffffff 0%,
+					#f0f0f0 30%,
+					#cacaca 100%);
+					background-repeat: no-repeat;
+			background-attachment: fixed;
+	}
+
+	.canvas-app-canvas {
+		background-repeat:no-repeat;
+		background-position: center center;
+	}
+
+	.progress-container {
+		position: fixed;
+		top: calc(50%);
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.progress-bar {
+		width: 80vw;
+		max-width: 420px;
+		min-width: 280px;
+		height: 30px;
+		background: linear-gradient(to bottom, #e6e6e6, #dbdbdb);
+		/* Почти как фон, но чуть темнее */
+		border-radius: 100px;
+		position: relative;
+		margin-bottom: 14px;
+		overflow: visible;
+		z-index: 1;
+
+		box-shadow:
+			inset 0 1px 1px rgba(0, 0, 0, 0.1);
+	}
+
+
+	.progress-fill {
+		width: 8%;
+		height: 34px;
+		/* larger than bar */
+		background: linear-gradient(to bottom, #e1f1d1, #b7d1ab);
+		border-radius: 100px;
+		position: absolute;
+		top: -2px;
+		/* slightly lower */
+		left: 0;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+		transition: width 0.4s ease;
+		z-index: 2;
+		box-shadow:
+			inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+			inset 0 2px 1px rgba(255, 255, 255, 0.1),
+			0 6px 13px rgba(0, 0, 0, 0.2);
+	}
+
+	.tooltip-box {
+		position: absolute;
+		top: -40px;
+		right: 0;
+		transform: translateX(15%);
+		z-index: 10;
+		filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+		/* общая тень */
+	}
+
+	.progress-tooltip {
+		background: #f0f0f0;
+		padding: 4px 10px;
+		border-radius: 6px;
+		font-size: 12px;
+		color: #444;
+		white-space: nowrap;
+		z-index: 11;
+	}
+
+	.tooltip-arrow {
+		position: absolute;
+		bottom: -8px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-top: 12px solid #f0f0f0;
+		z-index: 12;
+	}
+
+
+
+	.loading-text {
+		font-size: 17px;
+		font-weight: bold;
+		color: #555;
+		line-height: 1.1;
+	}
+
+	.loading-text span {
+		font-size: 11px;
+		font-weight: normal;
+		color: #999;
+	}
+
+	@keyframes spring-bounce {
+		0% {
+			transform: translateY(0) scale(1);
+		}
+
+		20% {
+			transform: translateY(-25px) scale(1.05);
+		}
+
+		40% {
+			transform: translateY(0) scale(0.97);
+		}
+
+		60% {
+			transform: translateY(-12px) scale(1.02);
+		}
+
+		80% {
+			transform: translateY(0) scale(1);
+		}
+
+		100% {
+			transform: translateY(0) scale(1);
+		}
+	}
+
+	.progress-icon {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 35px;
+		image-rendering: auto;
+		animation: spring-bounce 1.6s infinite cubic-bezier(0.33, 0.67, 0.67, 1);
+		filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+	}
+	</style>
+  <script src="./playgama-bridge.js"></script>
+  <script type="text/javascript">
+        window.is_bridge_inited = false
+        bridge.initialize().then(() => {
+
+            const AD_OPENED = 0
+            const AD_CLOSED = 1
+            const AD_REWARDED = 2
+            const AD_FAILED = 3
+
+            bridge.advertisement.on(
+                bridge.EVENT_NAME.REWARDED_STATE_CHANGED,
+                state => {
+                    if (state === "opened") JsToDef.send("rew_state", AD_OPENED)
+                    else if (state === "closed") JsToDef.send("rew_state", AD_CLOSED)
+                    else if (state === "rewarded") JsToDef.send("rew_state", AD_REWARDED)
+                    else if (state === "failed") JsToDef.send("rew_state", AD_FAILED)
+                }
+            )
+
+            bridge.advertisement.on(
+                bridge.EVENT_NAME.INTERSTITIAL_STATE_CHANGED,
+                state => {
+                    if (state === "opened") JsToDef.send("inter_state", AD_OPENED)
+                    else if (state === "closed") JsToDef.send("inter_state", AD_CLOSED)
+                    else if (state === "failed") JsToDef.send("inter_state", AD_FAILED)
+                }
+            )
+
+            window.is_bridge_inited = true
+
+        }).catch(error => {
+            console.log("error when initialize bridge");
+            console.log(error);
+        });
+    </script>
+ </head>
+ <body>
+  <div id="app-container" class="canvas-app-container">
+   <div class="progress-container"><img id="randomImage" src="" class="progress-icon" alt=" ">
+    <div class="progress-bar">
+     <div class="progress-fill">
+      <div class="tooltip-box">
+       <div class="progress-tooltip">
+        0% 
+        <div class="tooltip-arrow"></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="loading-text" id="loading-text">
+     <br><span id="loading-text-span"></span>
+    </div>
+   </div>
+   <div id="running-from-file-warning" style="display: none; margin: 3em;">
+    <h1>Running from local file ⚠️</h1>
+    <p>It seems like you have opened this file by double-clicking on it. In order to test your build in a browser <b>you need to load this file from a web server</b>. You can either upload this file and the rest of the files from a Defold HTML5 bundle to a web hosting service OR host them using a local web server on your home network.</p>
+    <p><a href="https://defold.com/manuals/html5/#testing-html5-build" target="_blank">Learn more about running a local web server in the Defold HTML5 manual</a>.</p>
+   </div>
+   <div id="webgl-not-supported" style="display: none; margin: 3em;">
+    <h1>WebGL not supported ⚠️</h1>
+    <p>WebGL is not supported by your browser - visit <a href="https://get.webgl.org/">https://get.webgl.org/</a> to learn more.</p>
+   </div>
+   <div id="canvas-container" class="canvas-app-canvas-container">
+    <canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1080" height="1920"></canvas>
+   </div>
+  </div>
+  <script>
+		window.my_vk_app_link = "https://kassial.github.io/sticker_ball/"
+		window.image_base_64 = ""
+
+		function getPreferredLanguage() {
+				const supportedLanguages = ['en', 'ru', 'tr', 'pt', 'es', 'pt-br'];
+				const normalizedSupported = supportedLanguages.map(lang => lang.toLowerCase());
+				const browserLangs = navigator.languages || [navigator.language || 'en'];
+				for (const lang of browserLangs) {
+					const [baseLang, region] = lang.toLowerCase().split(/[-_]/);
+					const fullLang = region ? `${baseLang}-${region}` : baseLang;
+					const exactMatchIndex = normalizedSupported.indexOf(fullLang);
+					if (exactMatchIndex !== -1) {
+						return supportedLanguages[exactMatchIndex];
+					}
+					const baseMatchIndex = normalizedSupported.indexOf(baseLang);
+					if (baseMatchIndex !== -1) {
+						return supportedLanguages[baseMatchIndex];
+					}
+				}
+				return 'en';
+			}
+			function getRandomImagePath() {
+				return `my_web_template/source_core.png`;
+			}
+			document.addEventListener("DOMContentLoaded", () => {
+				const img = document.getElementById("randomImage");
+				img.src = getRandomImagePath();
+
+				const lang = getPreferredLanguage();
+				const loadingText = document.getElementById("loading-text");
+				const loadingTextSpan = document.getElementById("loading-text-span");
+				switch (lang) {
+					case 'ru':
+						loadingTextSpan.innerHTML = "Пожалуйста, подождите...";
+						loadingText.innerHTML = "Загрузка" + loadingText.innerHTML;
+						break;
+					case 'en':
+						loadingTextSpan.innerHTML = "Please wait...";
+						loadingText.innerHTML = "Loading" + loadingText.innerHTML;
+						break;
+					case 'tr':
+						loadingTextSpan.innerHTML = "Lütfen bekleyin...";
+						loadingText.innerHTML = "Yükleniyor" + loadingText.innerHTML;
+						break;
+					case 'pt':
+						loadingTextSpan.innerHTML = "Por favor, aguarde...";
+						loadingText.innerHTML = "Carregando" + loadingText.innerHTML;
+						break;
+					case 'es':
+						loadingTextSpan.innerHTML = "Por favor, espere...";
+						loadingText.innerHTML = "Cargando" + loadingText.innerHTML;
+						break;
+					case 'pt-br':
+						loadingTextSpan.innerHTML = "Por favor, aguarde...";
+						loadingText.innerHTML = "Carregando" + loadingText.innerHTML;
+						break;
+					default:
+						loadingTextSpan.innerHTML = "Please wait...";
+						loadingText.innerHTML = "Loading" + loadingText.innerHTML;
+				}
+			});
+		</script>
+  <script id="engine-loader" type="text/javascript" src="dmloader.js"></script>
+  <script id="engine-setup" type="text/javascript">
+
+		CUSTOM_PARAMETERS['update_progress'] = function (progress) {
+			const fill = document.querySelector('.progress-fill');
+			const tooltip = document.querySelector('.progress-tooltip');
+			let fill_percent = 8 + (progress * (92 / 100));
+			fill_percent = Math.floor(fill_percent);
+			fill.style.width = fill_percent + '%';
+			tooltip.innerHTML = `${fill_percent}%<div class="tooltip-arrow"></div>`;
+		}
+	</script>
+  <script id="engine-start" type="text/javascript">
+		var runningFromFileWarning = document.getElementById("running-from-file-warning");
+		if (window.location.href.startsWith("file://")) {
+			runningFromFileWarning.style.display = "block";
+		}
+		else {
+			EngineLoader.load("canvas", "Universe");
+			runningFromFileWarning.parentNode.removeChild(runningFromFileWarning);
+		}
+	</script>
+ </body>
+</html>
