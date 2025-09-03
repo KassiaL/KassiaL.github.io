@@ -2,3 +2,6 @@
 /*.symbols
 /*.json
 /reports/
+reports/report.html
+reports/report_time.html
+reports/excluded_report.html
