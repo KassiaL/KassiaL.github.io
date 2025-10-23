@@ -1,21 +1,21 @@
 {
   "project_git" : {
-    "sha1" : "7d7e3660cddf28403a88f86ac34af8d059ff1393",
+    "sha1" : "03d7416c357d88dc5f93fa5c93b199587c84f861",
     "origin" : "https://github.com/KassiaL/My_Little_Universe.git",
     "branch" : "master"
   },
   "bob_arguments" : {
-    "sha1" : "380c197c28fdd0b49606f5353bb65d3dd4aaccbf",
+    "sha1" : "7c81792859a6da7f7401c0ac37a4cc83bb500ff6",
     "version" : "1.11.0",
-    "timestamp" : "2025-08-27 22:46:02"
+    "timestamp" : "2025-09-08 09:27:37"
   },
-  "defold_sdk" : "380c197c28fdd0b49606f5353bb65d3dd4aaccbf",
+  "defold_sdk" : "7c81792859a6da7f7401c0ac37a4cc83bb500ff6",
   "dependencies" : [ {
     "link" : "https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip",
     "md5" : "6145181B4CF7433B8E156A965EE0CBB0"
   }, {
     "link" : "https://github.com/defold/extension-firebase/archive/master.zip",
-    "md5" : "75D10C5A1088056336CE41B16B2406CE"
+    "md5" : "580758359BDCA59E1187AC42AF04C8CD"
   }, {
     "link" : "https://github.com/indiesoftby/defold-liveupdate-reszip/archive/main.zip",
     "md5" : "4BDE04A432B71EB4598CA336679CFD8E"
@@ -29,8 +29,11 @@
     "link" : "https://github.com/subsoap/defsave/archive/master.zip",
     "md5" : "19999A19A9A9E492007336E297EE713C"
   }, {
+    "link" : "https://github.com/defold/extension-iap/archive/master.zip",
+    "md5" : "B446B0808B91EA381774AA8B7A176567"
+  }, {
     "link" : "https://github.com/britzl/monarch/archive/master.zip",
-    "md5" : "7AB3569065B8AC29C32DACCDFB84EA33"
+    "md5" : "80CC6658F50A4079F49CAA1C314A7C5A"
   }, {
     "link" : "https://github.com/subsoap/defos/archive/refs/tags/v2.8.3.zip",
     "md5" : "3A79AEE85DA1EC58B4CAB58E1D85B395"
@@ -42,10 +45,19 @@
     "md5" : "B15715041B3BC5FB324796ACB77277BB"
   }, {
     "link" : "https://github.com/defold/extension-firebase-analytics/archive/master.zip",
-    "md5" : "F428B13943321EAA894B64465710EC80"
+    "md5" : "41514D39486935D57E60651F5635BF12"
   }, {
     "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
     "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+  }, {
+    "link" : "https://github.com/KassiaL/Defigma/archive/master.zip",
+    "md5" : "3E66EF137E62181BCBF5B3BF9C6F4B12"
+  }, {
+    "link" : "https://github.com/KassiaL/playgama_sdk/archive/main.zip",
+    "md5" : "0B3F6D99CCD7FEF5206C99947983AAD3"
+  }, {
+    "link" : "https://github.com/KassiaL/appodeal/archive/master.zip",
+    "md5" : "BF691BE0B07115389597009296C4871E"
   }, {
     "link" : "https://github.com/d954mas/defold-box2d/archive/master.zip",
     "md5" : "B9D4927DF822E94FD2FD9D1C7886D27F"
