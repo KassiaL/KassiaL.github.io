@@ -1,15 +1,15 @@
 {
   "project_git" : {
-    "sha1" : "03d7416c357d88dc5f93fa5c93b199587c84f861",
+    "sha1" : "a1c34215a32417aba3cdadcc2e071713560bb8c5",
     "origin" : "https://github.com/KassiaL/My_Little_Universe.git",
     "branch" : "master"
   },
   "bob_arguments" : {
-    "sha1" : "7c81792859a6da7f7401c0ac37a4cc83bb500ff6",
-    "version" : "1.11.0",
-    "timestamp" : "2025-09-08 09:27:37"
+    "sha1" : "758dfc0ea71dca26d169fddd0c5a1bc6dd0be4b3",
+    "version" : "1.11.1",
+    "timestamp" : "2025-10-17 09:41:02"
   },
-  "defold_sdk" : "7c81792859a6da7f7401c0ac37a4cc83bb500ff6",
+  "defold_sdk" : "758dfc0ea71dca26d169fddd0c5a1bc6dd0be4b3",
   "dependencies" : [ {
     "link" : "https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip",
     "md5" : "6145181B4CF7433B8E156A965EE0CBB0"
@@ -41,6 +41,9 @@
     "link" : "https://github.com/Insality/defold-tweener/archive/refs/tags/3.zip",
     "md5" : "CFB85626C718FEA631D61A22BF55E70C"
   }, {
+    "link" : "https://github.com/KassiaL/Defigma_Defold/archive/master.zip",
+    "md5" : "2ADFE0242A04474517ECC8C2B7E9F19A"
+  }, {
     "link" : "https://github.com/Insality/panthera/archive/refs/tags/runtime.4.zip",
     "md5" : "B15715041B3BC5FB324796ACB77277BB"
   }, {
@@ -50,11 +53,8 @@
     "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
     "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
   }, {
-    "link" : "https://github.com/KassiaL/Defigma/archive/master.zip",
-    "md5" : "3E66EF137E62181BCBF5B3BF9C6F4B12"
-  }, {
     "link" : "https://github.com/KassiaL/playgama_sdk/archive/main.zip",
-    "md5" : "0B3F6D99CCD7FEF5206C99947983AAD3"
+    "md5" : "FDEA1B1C8CB5D2D91FB9C145A4CD6C53"
   }, {
     "link" : "https://github.com/KassiaL/appodeal/archive/master.zip",
     "md5" : "BF691BE0B07115389597009296C4871E"

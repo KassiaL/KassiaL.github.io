@@ -6,6 +6,7 @@ version = 0.0.1
 publisher = Sergey Kurbyko
 developer = Sergey Kurbyko
 write_log = 0
+write_log_file = 0
 minimum_log_level = 1
 compress_archive = 1
 bundle_resources = res

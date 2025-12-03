@@ -136,5 +136,7 @@
 			"id": "coinleaderboard"
 		}
 	],
-	"sendAnalyticsEvents": true
+	"sendAnalyticsEvents": true,
+	"showFullLoadingLogo": false,
+	"disableLoadingLogo": true
 }
