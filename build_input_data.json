@@ -1,6 +1,6 @@
 {
   "project_git" : {
-    "sha1" : "02d53184a0e3ecd08d647418273e4932f9f73d1c",
+    "sha1" : "3583a52334646728c905b5ca18f795a6736015ce",
     "origin" : "https://github.com/KassiaL/My_Little_Universe.git",
     "branch" : "master"
   },
@@ -18,7 +18,7 @@
     "md5" : "580758359BDCA59E1187AC42AF04C8CD"
   }, {
     "link" : "https://github.com/indiesoftby/defold-liveupdate-reszip/archive/main.zip",
-    "md5" : "4BDE04A432B71EB4598CA336679CFD8E"
+    "md5" : "0CB3461F7DE4C3BE94DCDE966EF570DE"
   }, {
     "link" : "https://github.com/AGulev/jstodef/archive/refs/tags/3.0.0.zip",
     "md5" : "EF6A9D8028F80E2285C7B209C6528AC9"
@@ -29,20 +29,20 @@
     "link" : "https://github.com/subsoap/defsave/archive/master.zip",
     "md5" : "19999A19A9A9E492007336E297EE713C"
   }, {
-    "link" : "https://github.com/defold/extension-iap/archive/master.zip",
-    "md5" : "B446B0808B91EA381774AA8B7A176567"
-  }, {
     "link" : "https://github.com/britzl/monarch/archive/master.zip",
-    "md5" : "80CC6658F50A4079F49CAA1C314A7C5A"
+    "md5" : "F3B35BA3B942CB763285DB325845613D"
   }, {
     "link" : "https://github.com/subsoap/defos/archive/refs/tags/v2.8.3.zip",
     "md5" : "3A79AEE85DA1EC58B4CAB58E1D85B395"
+  }, {
+    "link" : "https://github.com/rgrams/debug-draw/archive/master.zip",
+    "md5" : "2006D2C0734C298ADD3485320896262C"
   }, {
     "link" : "https://github.com/Insality/defold-tweener/archive/refs/tags/3.zip",
     "md5" : "CFB85626C718FEA631D61A22BF55E70C"
   }, {
     "link" : "https://github.com/KassiaL/Defigma_Defold/archive/master.zip",
-    "md5" : "2ADFE0242A04474517ECC8C2B7E9F19A"
+    "md5" : "4DE46686C96BF2A3C491E4713D1626F1"
   }, {
     "link" : "https://github.com/Insality/panthera/archive/refs/tags/runtime.4.zip",
     "md5" : "B15715041B3BC5FB324796ACB77277BB"
@@ -54,10 +54,7 @@
     "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
   }, {
     "link" : "https://github.com/KassiaL/playgama_sdk/archive/main.zip",
-    "md5" : "FDEA1B1C8CB5D2D91FB9C145A4CD6C53"
-  }, {
-    "link" : "https://github.com/KassiaL/appodeal/archive/master.zip",
-    "md5" : "BF691BE0B07115389597009296C4871E"
+    "md5" : "3667CF4C283BF2F20D8BA107191AADFC"
   }, {
     "link" : "https://github.com/d954mas/defold-box2d/archive/master.zip",
     "md5" : "B9D4927DF822E94FD2FD9D1C7886D27F"

@@ -126,6 +126,16 @@
 				"amount": 2500,
 				"description": "Get the resources of the eighth location"
 			}
+		},
+		{
+			"id": "ads_offer",
+			"playgama": {
+				"amount": 19
+			},
+			"playdeck": {
+				"amount": 2499,
+				"description": "NO MORE ADS AND BANNERS, JUST PLAY LIKE A KING!"
+			}
 		}
 	],
 	"leaderboards": [
