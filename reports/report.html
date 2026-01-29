@@ -5,16 +5,16 @@
     <script type="text/javascript">
       var report_data = {
   "report_version" : "1.0.0",
-  "project_name" : "Universe",
-  "build_timestamp" : 1769263040,
+  "project_name" : "SafePlay",
+  "build_timestamp" : 1769666367,
   "build_options" : {
     "architectures" : "wasm-web,wasm_pthread-web,js-web",
     "exclude-gles-sm100" : "false",
     "platform" : "js-web",
     "sound-stream-enabled" : "false",
     "output-glsl120" : "false",
-    "liveupdate" : "true",
-    "variant" : "release",
+    "liveupdate" : "false",
+    "variant" : "debug",
     "font-runtime-generation" : "false",
     "output-glsl" : "false",
     "defoldsdk" : "758dfc0ea71dca26d169fddd0c5a1bc6dd0be4b3",
@@ -34,19 +34,19 @@
     "physics-type-2D" : "true"
   },
   "resources" : [ {
-    "file" : "/collections/game/misc/decor/decor_road1-cross.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
+    "file" : "/druid/base/static_grid.luac",
+    "size" : 9939,
+    "compressed_size" : 2960,
+    "encrypted" : true
   }, {
-    "file" : "/_generated_3c333906b7ff66c7.spritec",
-    "size" : 144,
-    "compressed_size" : 136,
-    "encrypted" : false
+    "file" : "/monarch/screen_proxy.scriptc",
+    "size" : 2497,
+    "compressed_size" : 1092,
+    "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/decor/decor_road1-cross3.goc",
-    "size" : 59,
-    "compressed_size" : 60,
+    "file" : "/_generated_f45630a0370b5e7c.collectionproxyc",
+    "size" : 40,
+    "compressed_size" : 40,
     "encrypted" : false
   }, {
     "file" : "/druid/druid.luac",
@@ -54,599 +54,19 @@
     "compressed_size" : 1448,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/other/hex_black.goc",
-    "size" : 54,
-    "compressed_size" : 56,
+    "file" : "/assets/textures/misc/misc.a.texturesetc",
+    "size" : 4016,
+    "compressed_size" : 1464,
     "encrypted" : false
   }, {
-    "file" : "/_generated_3bfb6b174e43d2b8.spritec",
-    "size" : 134,
-    "compressed_size" : 124,
+    "file" : "/collections/slidepuzzle/slidepuzzle.guic",
+    "size" : 26193,
+    "compressed_size" : 2464,
     "encrypted" : false
   }, {
-    "file" : "/_generated_2476df86beb38ec5.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_507c828dc11f0d97.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_stone_road1.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8939c76da93f82b5.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/chest/ice_run_01.oggc",
-    "size" : 7013,
-    "compressed_size" : 5480,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/extended/data_list.luac",
-    "size" : 4857,
-    "compressed_size" : 1872,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/interstitial/interstitial.guic",
-    "size" : 2314,
-    "compressed_size" : 836,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2deb07a446df9ba4.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f3391297b4b7823c.goc",
-    "size" : 85,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_cf91890718db7594.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/need_lvl_up_panel.luac",
-    "size" : 3447,
-    "compressed_size" : 1084,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_plank.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/repairable_state_manager.luac",
-    "size" : 4380,
-    "compressed_size" : 1904,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/offer/offer_defigma.luac",
-    "size" : 1504,
-    "compressed_size" : 424,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_9b3e5fce0e64eb60.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_22fd2a48db1664a7.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_bb8bf07eeca7072b.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b3199b723a6bc858.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/stuff/polyglot.luac",
-    "size" : 937,
-    "compressed_size" : 488,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_237fa12f8b416969.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_249946e6110a1799.soundc",
-    "size" : 52,
+    "file" : "/_generated_842814198a817204.goc",
+    "size" : 56,
     "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/bridge.luac",
-    "size" : 1624,
-    "compressed_size" : 820,
-    "encrypted" : true
-  }, {
-    "file" : "/m/enemy_config.luac",
-    "size" : 2068,
-    "compressed_size" : 684,
-    "encrypted" : true
-  }, {
-    "file" : "/druid/custom/rich_input/rich_input.luac",
-    "size" : 7293,
-    "compressed_size" : 2516,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_e2bd93dd7665ff27.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9de20d90494f4f15.spritec",
-    "size" : 119,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f1886d5ae00a7711.spritec",
-    "size" : 145,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d6ab637cda18cad2.soundc",
-    "size" : 48,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/render/default.display_profilesc",
-    "size" : 41,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b482c47e28b54d88.spritec",
-    "size" : 117,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4c4e8e5613daef21.soundc",
-    "size" : 55,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_39c1e92d36a54c89.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/portal/portal.gui_scriptc",
-    "size" : 5170,
-    "compressed_size" : 1508,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_lantern2.goc",
-    "size" : 226,
-    "compressed_size" : 192,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/iced_shark.goc",
-    "size" : 102,
-    "compressed_size" : 96,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ce0ee64ddb1e74ba.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_de5e8b3f0b6c3a18.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d235c6baa8dd2b5c.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road1_end.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6e1b85b9d5a5a2e4.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy6/enemy6_walk1.oggc",
-    "size" : 9754,
-    "compressed_size" : 8208,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/loader/loader.scriptc",
-    "size" : 5094,
-    "compressed_size" : 2284,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_8a0d9c513f0df37a.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dc78f4125cae9e46.soundc",
-    "size" : 61,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2e8c2979946acac0.goc",
-    "size" : 104,
-    "compressed_size" : 96,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_plant.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/offer/offer.gui_scriptc",
-    "size" : 4287,
-    "compressed_size" : 1548,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_30a5be2649436a24.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects.a.texturesetc",
-    "size" : 8356,
-    "compressed_size" : 2988,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/snow_rock/Azalea_break5.oggc",
-    "size" : 23522,
-    "compressed_size" : 23524,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2a7ed107a78917c7.soundc",
-    "size" : 52,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dab0d1c04005edde.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_af1bdc741ba4a0aa.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8ea2c1277386a4de.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects5.texturec",
-    "size" : 262290,
-    "compressed_size" : 50008,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e2727d4ef7359e1e.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/lava_edge_top.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6f81681b613ebfee.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_75a241f2f54b1f73.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy7/enemy7.a.texturesetc",
-    "size" : 2653,
-    "compressed_size" : 1012,
-    "encrypted" : false
-  }, {
-    "file" : "/panthera/adapters/adapter_go.luac",
-    "size" : 6345,
-    "compressed_size" : 2180,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_3a07bd541cf666eb.goc",
-    "size" : 85,
-    "compressed_size" : 80,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/multi_hex_objects.luac",
-    "size" : 948,
-    "compressed_size" : 288,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_2db093a881d39dd1.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4f2fa9f8db266cc2.spritec",
-    "size" : 120,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ce6ef84ac19100ee.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/palm.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects4.a.texturesetc",
-    "size" : 5932,
-    "compressed_size" : 2104,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/resource.luac",
-    "size" : 21347,
-    "compressed_size" : 6260,
-    "encrypted" : true
-  }, {
-    "file" : "/shader_2713870051161532414.spc",
-    "size" : 2104,
-    "compressed_size" : 896,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6f32c4fa902ac06e.spritec",
-    "size" : 121,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/yeti_bribable.goc",
-    "size" : 76,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/graphics/__particle_blob_tilesource.texturec",
-    "size" : 1161,
-    "compressed_size" : 432,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ec3c9eefbaf268bd.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2d1c2f8b8d37eae.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/volcano.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_40ccd2f94c8c9d1.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects3.a.texturesetc",
-    "size" : 6182,
-    "compressed_size" : 2116,
-    "encrypted" : false
-  }, {
-    "file" : "/m/scripts/delete.scriptc",
-    "size" : 71,
-    "compressed_size" : 72,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_63c235365dc4974b.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_37956b5d322f42c6.goc",
-    "size" : 182,
-    "compressed_size" : 152,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects2.a.texturesetc",
-    "size" : 7859,
-    "compressed_size" : 2844,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/extended/swipe.luac",
-    "size" : 2895,
-    "compressed_size" : 1264,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/sounds/mushroom/Tuff_break1.oggc",
-    "size" : 15600,
-    "compressed_size" : 15600,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_860cadcb104ab761.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2fd1daef6bc73afd.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_36b514135ec54f2b.spritec",
-    "size" : 127,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/particles/torch_fx.goc",
-    "size" : 60,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_dark_grass.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_776599c16d8c71fe.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy2/enemy2.a.texturesetc",
-    "size" : 4214,
-    "compressed_size" : 1536,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_23ecc0c5a90ebe93.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_33a07b45406e226e.goc",
-    "size" : 230,
-    "compressed_size" : 196,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/pick_up_resource_panel.luac",
-    "size" : 6259,
-    "compressed_size" : 1852,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_bdb74d875cd50e03.soundc",
-    "size" : 57,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d18025fd93d6e4b4.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4fce7c3b8f40cab5.goc",
-    "size" : 224,
-    "compressed_size" : 192,
-    "encrypted" : false
-  }, {
-    "file" : "/wraptext/wraptext.luac",
-    "size" : 3260,
-    "compressed_size" : 1620,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d71f1eb8b5d0a4a4.factoryc",
-    "size" : 38,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e9225a3bfef69189.soundc",
-    "size" : 47,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2c3b076571bffc02.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road1-cross2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ad11a91f11c59fab.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/chest/ice_run_02.oggc",
-    "size" : 7172,
-    "compressed_size" : 5648,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/pine/Wood_dig2.oggc",
-    "size" : 6294,
-    "compressed_size" : 5948,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy7/enemy7_attack.oggc",
-    "size" : 6940,
-    "compressed_size" : 5692,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_step.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9911fa7866461601.spritec",
-    "size" : 131,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/other_colliders.luac",
-    "size" : 17502,
-    "compressed_size" : 1288,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_stone_road3.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3aa9a95c50f97f16.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/welcome_offer.luac",
-    "size" : 1128,
-    "compressed_size" : 576,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_1417f2f18ee9945d.soundc",
-    "size" : 54,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects3.texturec",
-    "size" : 262290,
-    "compressed_size" : 49168,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/iced_anchor.goc",
-    "size" : 102,
-    "compressed_size" : 96,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_253451d43acd1514.spritec",
-    "size" : 142,
-    "compressed_size" : 136,
     "encrypted" : false
   }, {
     "file" : "/druid/base/button.luac",
@@ -654,129 +74,139 @@
     "compressed_size" : 2560,
     "encrypted" : true
   }, {
-    "file" : "/collections/editor/editor.collectionc",
-    "size" : 268,
-    "compressed_size" : 212,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/hd.luac",
-    "size" : 254,
-    "compressed_size" : 132,
+    "file" : "/druid/base/drag.luac",
+    "size" : 6213,
+    "compressed_size" : 2232,
     "encrypted" : true
   }, {
-    "file" : "/_generated_32d5fb6ead2cafc0.spritec",
-    "size" : 130,
-    "compressed_size" : 124,
-    "encrypted" : false
+    "file" : "/druid/extended/data_list.luac",
+    "size" : 4874,
+    "compressed_size" : 1876,
+    "encrypted" : true
   }, {
-    "file" : "/_generated_658f72c956c91cd1.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
+    "file" : "/m/game_options.luac",
+    "size" : 282,
+    "compressed_size" : 212,
+    "encrypted" : true
   }, {
-    "file" : "/assets/sounds/enemy/enemy7/enemy7_walk2.oggc",
-    "size" : 5149,
-    "compressed_size" : 4704,
-    "encrypted" : false
+    "file" : "/event/event.luac",
+    "size" : 5489,
+    "compressed_size" : 1948,
+    "encrypted" : true
   }, {
-    "file" : "/assets/sounds/tree/wood_walk_01.oggc",
-    "size" : 7120,
-    "compressed_size" : 5592,
-    "encrypted" : false
+    "file" : "/monarch/monarch.luac",
+    "size" : 33303,
+    "compressed_size" : 7560,
+    "encrypted" : true
   }, {
-    "file" : "/_generated_d7071ce04baed17c.soundc",
-    "size" : 55,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_uranium.goc",
-    "size" : 235,
-    "compressed_size" : 196,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_617eee9409ca6391.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_813ef48860ff5368.spritec",
-    "size" : 130,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/welcome_offer/welcome_offer.guic",
-    "size" : 14786,
-    "compressed_size" : 2680,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a93cb384ae839961.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_1cff891f74a6a21b.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e86e10eb537f4df1.goc",
-    "size" : 91,
-    "compressed_size" : 80,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c4fdda7908521f1a.soundc",
-    "size" : 55,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/update/update.collectionc",
-    "size" : 1464,
-    "compressed_size" : 744,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/particles/dark_flower_fx.goc",
-    "size" : 78,
-    "compressed_size" : 80,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7b041405b6c722b4.spritec",
-    "size" : 117,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/mushroom/Tuff_break2.oggc",
-    "size" : 15303,
-    "compressed_size" : 15304,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a55dd1c2e96c7818.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_bcde1cfcb15fb11e.soundc",
-    "size" : 46,
+    "file" : "/_generated_d551832bfc5488b.goc",
+    "size" : 52,
     "compressed_size" : 48,
     "encrypted" : false
   }, {
-    "file" : "/_generated_b3771e828552c907.spritec",
-    "size" : 121,
+    "file" : "/other/input/game.input_bindingc",
+    "size" : 2899,
+    "compressed_size" : 1852,
+    "encrypted" : false
+  }, {
+    "file" : "/m/stuff/locales.luac",
+    "size" : 1673,
+    "compressed_size" : 672,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/slidepuzzle/slidepuzzle.collectionc",
+    "size" : 106,
     "compressed_size" : 108,
     "encrypted" : false
   }, {
-    "file" : "/collections/bug/bug.guic",
-    "size" : 6809,
-    "compressed_size" : 1844,
+    "file" : "/_generated_Neuron Black_592276184c367703.glyph_bankc",
+    "size" : 82360,
+    "compressed_size" : 71580,
     "encrypted" : false
   }, {
-    "file" : "/collections/game/misc/hexes/hex3.goc",
-    "size" : 54,
-    "compressed_size" : 56,
+    "file" : "/m/stuff/polyglot.luac",
+    "size" : 937,
+    "compressed_size" : 488,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/slidepuzzle/slidepuzzle.gui_scriptc",
+    "size" : 2859,
+    "compressed_size" : 1180,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/const.luac",
+    "size" : 3424,
+    "compressed_size" : 1424,
+    "encrypted" : true
+  }, {
+    "file" : "/monarch/transitions/gui.luac",
+    "size" : 10258,
+    "compressed_size" : 2480,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/update/update.collectionc",
+    "size" : 389,
+    "compressed_size" : 260,
     "encrypted" : false
   }, {
-    "file" : "/_generated_46dc3e9f89a93949.goc",
-    "size" : 59,
-    "compressed_size" : 60,
+    "file" : "/_generated_454425e20bbb773e.goc",
+    "size" : 72,
+    "compressed_size" : 64,
+    "encrypted" : false
+  }, {
+    "file" : "/builtins/scripts/debugger.luac",
+    "size" : 4093,
+    "compressed_size" : 1632,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/custom/rich_input/rich_input.luac",
+    "size" : 7293,
+    "compressed_size" : 2516,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/base/back_handler.luac",
+    "size" : 671,
+    "compressed_size" : 424,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/settings/settings.gui_scriptc",
+    "size" : 4470,
+    "compressed_size" : 1436,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/settings/settings.guic",
+    "size" : 11947,
+    "compressed_size" : 2416,
+    "encrypted" : false
+  }, {
+    "file" : "/druid/extended/lang_text.luac",
+    "size" : 1423,
+    "compressed_size" : 632,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/helper.luac",
+    "size" : 10802,
+    "compressed_size" : 4296,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/menu/menu.guic",
+    "size" : 12597,
+    "compressed_size" : 1840,
+    "encrypted" : false
+  }, {
+    "file" : "/druid/system/druid_instance.luac",
+    "size" : 14291,
+    "compressed_size" : 4356,
+    "encrypted" : true
+  }, {
+    "file" : "/assets/fonts/noto_sans_cjk_black.fontc",
+    "size" : 1449,
+    "compressed_size" : 1452,
+    "encrypted" : false
+  }, {
+    "file" : "/builtins/render/default.display_profilesc",
+    "size" : 41,
+    "compressed_size" : 44,
     "encrypted" : false
   }, {
     "file" : "/builtins/input/default.gamepadsc",
@@ -784,219 +214,229 @@
     "compressed_size" : 5344,
     "encrypted" : false
   }, {
-    "file" : "/_generated_d49d5f06d35f5f95.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/refineries/axe_refinery.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_48121a57b1b8b944.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_86e1dc1897956cc8.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/rustore_iap.luac",
-    "size" : 5833,
-    "compressed_size" : 2016,
+    "file" : "/m/gui/slidepuzzle.luac",
+    "size" : 7299,
+    "compressed_size" : 2852,
     "encrypted" : true
   }, {
-    "file" : "/_generated_78afc1dc0d741c96.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
+    "file" : "/druid/custom/rich_text/module/rt_color.luac",
+    "size" : 900,
+    "compressed_size" : 460,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/base/text.luac",
+    "size" : 10035,
+    "compressed_size" : 2964,
+    "encrypted" : true
+  }, {
+    "file" : "/m/logic/slidepuzzle.luac",
+    "size" : 3821,
+    "compressed_size" : 1444,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/update/start_menu.scriptc",
+    "size" : 1212,
+    "compressed_size" : 664,
+    "encrypted" : true
+  }, {
+    "file" : "/monarch/utils/async.luac",
+    "size" : 818,
+    "compressed_size" : 508,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_9aaa151c4bfedcae.collectionproxyc",
+    "size" : 36,
+    "compressed_size" : 36,
     "encrypted" : false
   }, {
-    "file" : "/other/materials/fon.materialc",
-    "size" : 66,
-    "compressed_size" : 68,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/mountine3.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/rocket.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9326456183b0bccd.goc",
-    "size" : 97,
+    "file" : "/_generated_cf7e7ce31f88ccb.goc",
+    "size" : 93,
     "compressed_size" : 84,
     "encrypted" : false
   }, {
-    "file" : "/_generated_4af1ef9fdd56fb7d.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
+    "file" : "/druid/extended/layout.luac",
+    "size" : 10112,
+    "compressed_size" : 2924,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/base/hover.luac",
+    "size" : 3475,
+    "compressed_size" : 1368,
+    "encrypted" : true
+  }, {
+    "file" : "/assets/textures/menu/menu.texturec",
+    "size" : 32914,
+    "compressed_size" : 4268,
     "encrypted" : false
   }, {
-    "file" : "/modules/save_game.luac",
-    "size" : 1752,
-    "compressed_size" : 872,
+    "file" : "/builtins/scripts/socket.luac",
+    "size" : 3574,
+    "compressed_size" : 1284,
     "encrypted" : true
   }, {
-    "file" : "/m/bribable.luac",
-    "size" : 493,
-    "compressed_size" : 276,
+    "file" : "/m/stuff/mylib.luac",
+    "size" : 13340,
+    "compressed_size" : 4456,
     "encrypted" : true
+  }, {
+    "file" : "/defigma/materials/drop_shadow.materialc",
+    "size" : 63,
+    "compressed_size" : 64,
+    "encrypted" : false
   }, {
     "file" : "/monarch/utils/callback_tracker.luac",
     "size" : 1031,
     "compressed_size" : 552,
     "encrypted" : true
   }, {
-    "file" : "/_generated_6e1638a63a9e6d4c.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/welcome_offer/welcome_offer_defigma.luac",
-    "size" : 2101,
-    "compressed_size" : 408,
+    "file" : "/druid/extended/hotkey.luac",
+    "size" : 4054,
+    "compressed_size" : 1564,
     "encrypted" : true
   }, {
-    "file" : "/bridge/ads_utils/ad_wrapper.luac",
-    "size" : 2209,
-    "compressed_size" : 688,
+    "file" : "/assets/textures/misc/misc.texturec",
+    "size" : 524434,
+    "compressed_size" : 21240,
+    "encrypted" : false
+  }, {
+    "file" : "/_generated_90317f672b9819e3.collectionproxyc",
+    "size" : 40,
+    "compressed_size" : 40,
+    "encrypted" : false
+  }, {
+    "file" : "/collections/loader/loader.scriptc",
+    "size" : 1297,
+    "compressed_size" : 700,
     "encrypted" : true
   }, {
-    "file" : "/_generated_db0354cea48b62d7.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_29b36afc9c3b1c3a.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/no_ads_offer.luac",
-    "size" : 1521,
-    "compressed_size" : 756,
+    "file" : "/m/localization.luac",
+    "size" : 53014,
+    "compressed_size" : 21752,
     "encrypted" : true
-  }, {
-    "file" : "/_generated_da6cfa8c06111dae.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7215c0932d16a38.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_stone_road2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
   }, {
     "file" : "/druid/custom/rich_text/module/rt_tags.luac",
     "size" : 1893,
     "compressed_size" : 836,
     "encrypted" : true
   }, {
-    "file" : "/_generated_6d1a08241b76a885.soundc",
-    "size" : 54,
+    "file" : "/_generated_c1f090c671fe0465.goc",
+    "size" : 361,
+    "compressed_size" : 272,
+    "encrypted" : false
+  }, {
+    "file" : "/shader_6592067761991147028.spc",
+    "size" : 6324,
+    "compressed_size" : 1812,
+    "encrypted" : false
+  }, {
+    "file" : "/m/stuff/device.luac",
+    "size" : 4737,
+    "compressed_size" : 1748,
+    "encrypted" : true
+  }, {
+    "file" : "/builtins/fonts/font-df.materialc",
+    "size" : 63,
+    "compressed_size" : 64,
+    "encrypted" : false
+  }, {
+    "file" : "/druid/system/settings.luac",
+    "size" : 201,
+    "compressed_size" : 184,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/menu/menu.gui_scriptc",
+    "size" : 2537,
+    "compressed_size" : 1152,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_40284721e90941bc.goc",
+    "size" : 52,
     "compressed_size" : 52,
     "encrypted" : false
   }, {
-    "file" : "/_generated_b6a6d1fe6b1f4d33.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
+    "file" : "/builtins/scripts/mobdebug.luac",
+    "size" : 56775,
+    "compressed_size" : 16708,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/loader/loader.guic",
+    "size" : 306,
+    "compressed_size" : 216,
     "encrypted" : false
   }, {
-    "file" : "/_generated_3d813da38091efea.collectionproxyc",
-    "size" : 37,
-    "compressed_size" : 40,
+    "file" : "/shader_-3046066862591982601.spc",
+    "size" : 2739,
+    "compressed_size" : 1092,
     "encrypted" : false
   }, {
-    "file" : "/collections/game/misc/resources/uranium.goc",
-    "size" : 54,
-    "compressed_size" : 56,
+    "file" : "/_generated_8c960c002b27c0f.goc",
+    "size" : 48,
+    "compressed_size" : 44,
     "encrypted" : false
   }, {
-    "file" : "/_generated_c974d9a811769e6f.spritec",
-    "size" : 133,
-    "compressed_size" : 124,
+    "file" : "/builtins/render/default.renderc",
+    "size" : 41,
+    "compressed_size" : 44,
     "encrypted" : false
+  }, {
+    "file" : "/collections/slidepuzzle/slidepuzzle_defigma.luac",
+    "size" : 993,
+    "compressed_size" : 216,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/styles/default/style.luac",
+    "size" : 3788,
+    "compressed_size" : 1604,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/custom/rich_text/rich_text.luac",
+    "size" : 2679,
+    "compressed_size" : 1188,
+    "encrypted" : true
+  }, {
+    "file" : "/defigma/gradient.luac",
+    "size" : 2548,
+    "compressed_size" : 928,
+    "encrypted" : true
+  }, {
+    "file" : "/collections/settings/settings.collectionc",
+    "size" : 104,
+    "compressed_size" : 104,
+    "encrypted" : false
+  }, {
+    "file" : "/assets/textures/slidepuzzle/slidepuzzle.texturec",
+    "size" : 32914,
+    "compressed_size" : 3948,
+    "encrypted" : false
+  }, {
+    "file" : "/druid/custom/rich_text/module/rt.luac",
+    "size" : 13014,
+    "compressed_size" : 4184,
+    "encrypted" : true
   }, {
     "file" : "/collections/loader/loader.gui_scriptc",
-    "size" : 2113,
-    "compressed_size" : 1056,
+    "size" : 1740,
+    "compressed_size" : 872,
     "encrypted" : true
-  }, {
-    "file" : "/_generated_cd006af6c60f2cff.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
   }, {
     "file" : "/druid/component.luac",
-    "size" : 5775,
-    "compressed_size" : 2024,
+    "size" : 5827,
+    "compressed_size" : 2032,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/enemies/enemy7.collectionc",
-    "size" : 1342,
-    "compressed_size" : 672,
+    "file" : "/_generated_5d02d49295148bdf.goc",
+    "size" : 46,
+    "compressed_size" : 44,
     "encrypted" : false
   }, {
-    "file" : "/collections/game/misc/refineries/sword_refinery.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/sounds.goc",
-    "size" : 305,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_fed7300bb1f5dc52.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4e3b72212c68a0ae.spritec",
-    "size" : 129,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/orthographic/camera.scriptc",
-    "size" : 4622,
-    "compressed_size" : 1984,
+    "file" : "/m/scripts/cjk_switcher.scriptc",
+    "size" : 1485,
+    "compressed_size" : 612,
     "encrypted" : true
   }, {
-    "file" : "/_generated_6511fb50a702de06.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_234977383624197.spritec",
-    "size" : 127,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3059168c3b6d2fb1.spritec",
-    "size" : 122,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/liveupdate_reszip/reszip.luac",
-    "size" : 4425,
-    "compressed_size" : 1780,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_b9812ed7559984d6.spritec",
-    "size" : 112,
-    "compressed_size" : 104,
+    "file" : "/shader_2713870051161532414.spc",
+    "size" : 2104,
+    "compressed_size" : 900,
     "encrypted" : false
   }, {
     "file" : "/druid/extended/progress.luac",
@@ -1009,49 +449,44 @@
     "compressed_size" : 3456,
     "encrypted" : true
   }, {
-    "file" : "/_generated_892a60eb122c0c10.soundc",
-    "size" : 46,
-    "compressed_size" : 48,
+    "file" : "/collections/loader/loader.collectionc",
+    "size" : 263,
+    "compressed_size" : 204,
     "encrypted" : false
+  }, {
+    "file" : "/druid/custom/rich_text/module/rt_parse.luac",
+    "size" : 3824,
+    "compressed_size" : 1780,
+    "encrypted" : true
   }, {
     "file" : "/druid/system/utf8.luac",
-    "size" : 19860,
-    "compressed_size" : 5880,
+    "size" : 23509,
+    "compressed_size" : 6128,
     "encrypted" : true
   }, {
-    "file" : "/_generated_9ec6ac65fdbf2f4f.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
+    "file" : "/assets/sounds/funny.oggc",
+    "size" : 5629,
+    "compressed_size" : 4128,
     "encrypted" : false
   }, {
-    "file" : "/assets/textures/object/objects77.a.texturesetc",
-    "size" : 6580,
-    "compressed_size" : 1876,
+    "file" : "/_generated_e2a43a6a31f4c5a7.collectionproxyc",
+    "size" : 50,
+    "compressed_size" : 44,
     "encrypted" : false
   }, {
-    "file" : "/orthographic/camera.luac",
-    "size" : 21686,
-    "compressed_size" : 5996,
+    "file" : "/druid/base/scroll.luac",
+    "size" : 16917,
+    "compressed_size" : 4956,
     "encrypted" : true
   }, {
-    "file" : "/_generated_143f979babf780ff.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/hex_neighbours.luac",
-    "size" : 12103,
-    "compressed_size" : 2900,
+    "file" : "/druid/base/blocker.luac",
+    "size" : 883,
+    "compressed_size" : 452,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/adsres/adsres_meat.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_295a634fcd051727.soundc",
-    "size" : 52,
-    "compressed_size" : 52,
+    "file" : "/assets/fonts/neuron_black.fontc",
+    "size" : 508,
+    "compressed_size" : 508,
     "encrypted" : false
   }, {
     "file" : "/collections/sounds/sounds.collectionc",
@@ -1059,769 +494,79 @@
     "compressed_size" : 108,
     "encrypted" : false
   }, {
-    "file" : "/collections/game/misc/decor/decor_wall2.goc",
-    "size" : 232,
-    "compressed_size" : 168,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_40f7f7b667ef532e.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dfd47e265afcc543.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e0314b7b4b3d50bf.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/animations/offer_cat.luac",
-    "size" : 24138,
-    "compressed_size" : 1712,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_58d155d9331acc27.collectionproxyc",
-    "size" : 38,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/game.collectionc",
-    "size" : 100,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6b265ea23870d949.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy6/enemy6_attack.oggc",
-    "size" : 13512,
-    "compressed_size" : 11932,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/settings.luac",
-    "size" : 7106,
-    "compressed_size" : 2056,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_35810a6f05cb47a1.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9706864717ec9399.spritec",
-    "size" : 111,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9198c1fd6eba6713.spritec",
-    "size" : 110,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/effects/shining.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/thank_you/thank_you.gui_scriptc",
-    "size" : 3503,
-    "compressed_size" : 1416,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_48cfdcfb1c732c3c.spritec",
-    "size" : 119,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects_other.a.texturesetc",
-    "size" : 597,
-    "compressed_size" : 352,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/sulphur/Ancient_Debris_dig5.oggc",
-    "size" : 21026,
-    "compressed_size" : 21028,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6aa6f98335403e80.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_72e2dbbc929998f0.spritec",
-    "size" : 126,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_1e02dbdbcaa8457e.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/offer/cat/offer_cat.a.texturesetc",
-    "size" : 3221,
-    "compressed_size" : 1320,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_627d07c27d474f12.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/dead_tree/Azalea_Leaves_break5.oggc",
-    "size" : 14357,
-    "compressed_size" : 13608,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f4bf7196857bdc6e.spritec",
-    "size" : 117,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_75febd14f311a747.goc",
-    "size" : 97,
-    "compressed_size" : 84,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_80b0a385be98c6ce.goc",
-    "size" : 85,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy5/enemy5_walk1.oggc",
-    "size" : 13733,
-    "compressed_size" : 12188,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/enemy_spawner.goc",
-    "size" : 93,
-    "compressed_size" : 88,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4f9c85f67ad2cd76.spritec",
-    "size" : 120,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6859d655d6e8445f.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/other/render/orthographic.renderc",
-    "size" : 43,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2c236290d413b7b6.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2a5df917a972f681.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ogr_cloud.goc",
-    "size" : 76,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dbeb75883f224408.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d49b49353a0614d6.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/monarch/screen_proxy.scriptc",
-    "size" : 1984,
-    "compressed_size" : 1040,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/animations/enemy5.luac",
-    "size" : 85639,
-    "compressed_size" : 3996,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_9541bce91483036.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/interstitial.luac",
-    "size" : 2160,
-    "compressed_size" : 1044,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_9d0125f48ea257e1.soundc",
-    "size" : 45,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/ruby.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ogr.goc",
-    "size" : 76,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/amethyst/Amethyst_Cluster_break3.oggc",
-    "size" : 34600,
-    "compressed_size" : 34600,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_90f88cbf2fa3ec46.goc",
-    "size" : 224,
-    "compressed_size" : 192,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/tree/wood_walk_02.oggc",
-    "size" : 7120,
-    "compressed_size" : 5596,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_cabb8486781de45f.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/drag.luac",
-    "size" : 6213,
-    "compressed_size" : 2232,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_dd394c25be986e19.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/azurite.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ramp1.goc",
-    "size" : 69,
-    "compressed_size" : 72,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4aa741a522e7d1b1.collectionproxyc",
-    "size" : 52,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/loader/load_hd.scriptc",
-    "size" : 1640,
-    "compressed_size" : 908,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/sounds/azurite/Amethyst_place1.oggc",
-    "size" : 18349,
-    "compressed_size" : 18352,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a1cf1a9b6699a707.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/effects/adsres_fx.goc",
-    "size" : 69,
-    "compressed_size" : 72,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects44.a.texturesetc",
-    "size" : 1143,
-    "compressed_size" : 572,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/hex_shadow_up.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_144a2deafa7196bb.soundc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/analytics.luac",
-    "size" : 1346,
-    "compressed_size" : 616,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/particles/torch2.particlefxc",
-    "size" : 373,
-    "compressed_size" : 292,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_79cc689277b90b8.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c581837febb0d4e6.goc",
-    "size" : 231,
-    "compressed_size" : 196,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_Neuron Black_592276184c367703.glyph_bankc",
-    "size" : 82360,
-    "compressed_size" : 71580,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_22da8fffc2bb93bc.spritec",
-    "size" : 137,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/bridges.luac",
-    "size" : 116,
-    "compressed_size" : 100,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_1dccb153072b6d1d.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_0.goc",
-    "size" : 0,
-    "compressed_size" : 0,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/const.luac",
-    "size" : 3424,
-    "compressed_size" : 1424,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/object/objects8.a.texturesetc",
-    "size" : 6680,
-    "compressed_size" : 2296,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/mushroom/Tuff_break3.oggc",
-    "size" : 15539,
-    "compressed_size" : 15540,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_wall1.goc",
-    "size" : 227,
-    "compressed_size" : 160,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/dead_tree/Azalea_Leaves_step1.oggc",
-    "size" : 16823,
-    "compressed_size" : 16824,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_454425e20bbb773e.goc",
-    "size" : 72,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2983d09bb6cfbf05.goc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/shader_-7170045909771754498.spc",
-    "size" : 1922,
-    "compressed_size" : 860,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_50459060fad69a46.soundc",
-    "size" : 39,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_snow2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/mock.luac",
-    "size" : 6340,
-    "compressed_size" : 2112,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_429879d5920d34f3.collectionproxyc",
-    "size" : 34,
-    "compressed_size" : 36,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/attachments/steel_factory_attachment1.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road1-turn2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_great_sword_place.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/offer_chest1.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_975941ae2187883d.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/boulder/Basalt_dig1.oggc",
-    "size" : 20623,
-    "compressed_size" : 20624,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e099b751c2a6e64.soundc",
-    "size" : 48,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b89cf1189b625c3c.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/custom/rich_text/module/rt_color.luac",
-    "size" : 900,
-    "compressed_size" : 460,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_grass3.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9008f2feedc569d0.goc",
-    "size" : 42,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_76dabdcd3a88461d.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_830e4a41c32158c.goc",
-    "size" : 92,
-    "compressed_size" : 84,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3be90ee9cb30be25.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/monarch/utils/async.luac",
-    "size" : 818,
-    "compressed_size" : 508,
-    "encrypted" : true
-  }, {
-    "file" : "/defsave/defsave.luac",
-    "size" : 7575,
-    "compressed_size" : 2808,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_d374f3ad2d5f4ad7.soundc",
-    "size" : 39,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects2.texturec",
-    "size" : 131218,
-    "compressed_size" : 58620,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/rect.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_457abc56fc71346.goc",
-    "size" : 85,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/m/stuff/mylib.luac",
-    "size" : 13195,
-    "compressed_size" : 4444,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_metal_wall1.goc",
-    "size" : 222,
-    "compressed_size" : 172,
-    "encrypted" : false
-  }, {
-    "file" : "/other/materials/font-df_detached.materialc",
-    "size" : 68,
-    "compressed_size" : 68,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex5.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/walk/Gravel_dig1.oggc",
-    "size" : 6851,
-    "compressed_size" : 6492,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/collision_bits.luac",
-    "size" : 2422,
-    "compressed_size" : 916,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_edcfac0cbb4f5d64.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/stuff/device.luac",
-    "size" : 4737,
-    "compressed_size" : 1748,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_6afb541cea9a8c15.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_blub.goc",
-    "size" : 122,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ramp2.goc",
-    "size" : 69,
-    "compressed_size" : 72,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6725f4ee0238abdc.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/entry_point.goc",
-    "size" : 1255,
-    "compressed_size" : 720,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/styles/default/style.luac",
-    "size" : 3788,
-    "compressed_size" : 1604,
-    "encrypted" : true
-  }, {
-    "file" : "/druid/custom/rich_text/rich_text.luac",
-    "size" : 2679,
-    "compressed_size" : 1188,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_5b701d92d7aa57ab.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_58b1ae93aa32cc73.spritec",
-    "size" : 117,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_5fee970fd405ea62.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy5/enemy5.a.texturesetc",
-    "size" : 3690,
-    "compressed_size" : 1364,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a66db10e16c3a0d2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e80a792ed2fea843.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_48628d6daec5d59a.spritec",
-    "size" : 114,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_88ada787bee70d62.spritec",
-    "size" : 117,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_36174f0447fdeb30.spritec",
-    "size" : 133,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/enemies/enemy6.collectionc",
-    "size" : 1342,
-    "compressed_size" : 668,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_bcdb4946eac8f85e.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/portal/portal_defigma.luac",
-    "size" : 2075,
-    "compressed_size" : 408,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_ab6576809b015282.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7d53f522c6101a8f.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ec9b126ba74b04e3.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_74e75e47266c4144.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/loader/loader.collectionc",
-    "size" : 327,
-    "compressed_size" : 232,
-    "encrypted" : false
-  }, {
-    "file" : "/shader_8530260401045584127.spc",
-    "size" : 4245,
-    "compressed_size" : 1528,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ed1210a18e9668cc.spritec",
-    "size" : 123,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/m/ads_data.luac",
-    "size" : 4436,
-    "compressed_size" : 1616,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_f914183e3ac2bf7a.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_32bb3970de7c19ca.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/no_ads_offer/no_ads_offer.guic",
-    "size" : 8764,
-    "compressed_size" : 2248,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f145ad78a7dbda2a.spritec",
-    "size" : 117,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex4.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_61f170786e253acd.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
     "file" : "/m/stuff/anim.luac",
     "size" : 11195,
     "compressed_size" : 2572,
     "encrypted" : true
   }, {
-    "file" : "/_generated_3452ff162cb78ae4.collectionfactoryc",
-    "size" : 51,
-    "compressed_size" : 52,
+    "file" : "/_generated_fb3538a2852e363.goc",
+    "size" : 184,
+    "compressed_size" : 156,
     "encrypted" : false
   }, {
-    "file" : "/_generated_d8679be0ba225940.goc",
-    "size" : 59,
-    "compressed_size" : 60,
+    "file" : "/builtins/render/default.render_scriptc",
+    "size" : 8102,
+    "compressed_size" : 2520,
+    "encrypted" : true
+  }, {
+    "file" : "/monarch/transitions/easings.luac",
+    "size" : 707,
+    "compressed_size" : 332,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_Noto Sans CJK Black_6dc4d80990c41af.glyph_bankc",
+    "size" : 261251,
+    "compressed_size" : 261252,
     "encrypted" : false
   }, {
     "file" : "/m/stuff/style.luac",
-    "size" : 4072,
-    "compressed_size" : 1684,
+    "size" : 4193,
+    "compressed_size" : 1724,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/game.gui_scriptc",
-    "size" : 7638,
-    "compressed_size" : 1736,
+    "file" : "/event/events.luac",
+    "size" : 1139,
+    "compressed_size" : 412,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/decor/decor_road2-cross.goc",
-    "size" : 53,
-    "compressed_size" : 56,
+    "file" : "/druid/extended/slider.luac",
+    "size" : 4423,
+    "compressed_size" : 1700,
+    "encrypted" : true
+  }, {
+    "file" : "/_generated_ecbb21451e8cb521.goc",
+    "size" : 72,
+    "compressed_size" : 64,
     "encrypted" : false
   }, {
-    "file" : "/_generated_74ced57f11d5b7cd.collectionfactoryc",
-    "size" : 51,
-    "compressed_size" : 52,
+    "file" : "/m/gui/settings.luac",
+    "size" : 707,
+    "compressed_size" : 408,
+    "encrypted" : true
+  }, {
+    "file" : "/builtins/scripts/edn.luac",
+    "size" : 5892,
+    "compressed_size" : 2188,
+    "encrypted" : true
+  }, {
+    "file" : "/druid/extended/swipe.luac",
+    "size" : 2895,
+    "compressed_size" : 1264,
+    "encrypted" : true
+  }, {
+    "file" : "/assets/fonts/noto_sans_devanagari_black.fontc",
+    "size" : 426,
+    "compressed_size" : 428,
     "encrypted" : false
   }, {
-    "file" : "/assets/sounds/enemy/enemy1/enemy1_attack.oggc",
-    "size" : 12178,
-    "compressed_size" : 10692,
+    "file" : "/collections/menu/menu.collectionc",
+    "size" : 99,
+    "compressed_size" : 100,
     "encrypted" : false
   }, {
-    "file" : "/collections/game/misc/other/offer_chest2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6c3b49ddf533ceb8.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
+    "file" : "/assets/textures/menu/menu.a.texturesetc",
+    "size" : 580,
+    "compressed_size" : 292,
     "encrypted" : false
   }, {
     "file" : "/m/stuff/color.luac",
@@ -1829,699 +574,14 @@
     "compressed_size" : 436,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/detached.gui_scriptc",
-    "size" : 1419,
-    "compressed_size" : 704,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_2ccefcb1e23619e5.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e747b96472a115e1.spritec",
-    "size" : 126,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_60fee4dc70d14103.soundc",
-    "size" : 45,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/bug/bug.gui_scriptc",
-    "size" : 3038,
-    "compressed_size" : 1380,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_1ff9b7ac4b0ef94e.goc",
-    "size" : 89,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy7/enemy7_walk1.oggc",
-    "size" : 5822,
-    "compressed_size" : 5380,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dc563fc002a47970.spritec",
-    "size" : 116,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_snow1.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6f95b123d22c4fd9.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/attachments/steel_factory_attachment2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/static_grid.luac",
-    "size" : 9939,
-    "compressed_size" : 2960,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_6a546a45a561def.factoryc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_metal_wall2.goc",
-    "size" : 222,
-    "compressed_size" : 176,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_azurite.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_975c55b4e868dfb3.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/orthographic/camera.goc",
-    "size" : 96,
-    "compressed_size" : 92,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_92b801e3b17181b5.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_35563f32f69008fd.spritec",
-    "size" : 122,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/adsres.luac",
-    "size" : 4701,
-    "compressed_size" : 1344,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_a942d02f60903a4c.goc",
-    "size" : 223,
-    "compressed_size" : 188,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/refineries/attachments/axe_refinery_wheel.goc",
-    "size" : 58,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/refineries/attachments/axe_refinery_axe.goc",
-    "size" : 66,
-    "compressed_size" : 68,
-    "encrypted" : false
-  }, {
-    "file" : "/m/idler_config.luac",
-    "size" : 16233,
-    "compressed_size" : 3044,
-    "encrypted" : true
-  }, {
-    "file" : "/m/generated/enemies.luac",
-    "size" : 2743,
-    "compressed_size" : 724,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_b51bf9bbf65e9edc.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects8.texturec",
-    "size" : 395,
-    "compressed_size" : 340,
-    "encrypted" : false
-  }, {
-    "file" : "/m/game_options.luac",
-    "size" : 15937,
-    "compressed_size" : 4120,
-    "encrypted" : true
-  }, {
-    "file" : "/event/event.luac",
-    "size" : 5489,
-    "compressed_size" : 1948,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_cactus.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/monarch/monarch.luac",
-    "size" : 33303,
-    "compressed_size" : 7560,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_rock.goc",
-    "size" : 111,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects_common.a.texturesetc",
-    "size" : 4571,
-    "compressed_size" : 1616,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c8458b8018d60ef4.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b0b6c36278768fc2.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b4d20d477d2b8473.soundc",
-    "size" : 45,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/portal.luac",
-    "size" : 4236,
-    "compressed_size" : 1924,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_e2e5bf457f440a4c.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ad4d13c18821fa02.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f7ce60cacd563fa1.soundc",
-    "size" : 53,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_44156986bc92844f.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ce6d9e7285fb27b.spritec",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ef4e80b9db2e72fa.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ca8b4359322a968b.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_da8deda07a9147bc.spritec",
-    "size" : 126,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_91ff18a7a2f3b70c.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ec9cd18c5f0b583d.spritec",
-    "size" : 146,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/animations/enemy2.luac",
-    "size" : 98761,
-    "compressed_size" : 4516,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_b36ccd7be40275e0.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/factory_claim_panel.luac",
-    "size" : 4715,
-    "compressed_size" : 1476,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_fb02176e57f1c526.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/game2.collectionc",
-    "size" : 7143,
-    "compressed_size" : 1964,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/extended/lang_text.luac",
-    "size" : 1423,
-    "compressed_size" : 632,
-    "encrypted" : true
-  }, {
-    "file" : "/m/generated/bridges_mirrored.luac",
-    "size" : 125,
-    "compressed_size" : 108,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_ac06e5f67681ed48.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_123047142c2cb03e.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/scripts/floating.scriptc",
-    "size" : 1513,
-    "compressed_size" : 604,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_steel.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy5/enemy5_walk2.oggc",
-    "size" : 14041,
-    "compressed_size" : 12536,
-    "encrypted" : false
-  }, {
-    "file" : "/panthera/panthera.luac",
-    "size" : 9639,
-    "compressed_size" : 2648,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_8467c11555601145.spritec",
-    "size" : 120,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6acf379b6a131664.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road1_end2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_plant2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c2d987a3bb7e8c55.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects6.a.texturesetc",
-    "size" : 7022,
-    "compressed_size" : 2224,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_98ad210eeed3d8ee.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ec94f12b6b4cb52c.spritec",
-    "size" : 121,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9abbbd50c975bad3.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e7b3563ca8ae373b.spritec",
-    "size" : 134,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/editor.luac",
-    "size" : 31811,
-    "compressed_size" : 7884,
-    "encrypted" : true
-  }, {
-    "file" : "/m/detached_panels/resource.luac",
-    "size" : 3208,
-    "compressed_size" : 1328,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_5e91b51fb864b5ef.factoryc",
-    "size" : 51,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_90317f672b9819e3.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/reddit/reddit.guic",
-    "size" : 10375,
-    "compressed_size" : 2404,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e8df9e66bb9f3dfe.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_steel.goc",
-    "size" : 219,
-    "compressed_size" : 180,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b969579a07e86336.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dea35cf7a893350.goc",
-    "size" : 226,
-    "compressed_size" : 192,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/offer/cat/offer_cat.texturec",
-    "size" : 1048722,
-    "compressed_size" : 292888,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_95567171b8dba5b8.collectionproxyc",
-    "size" : 47,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8c6d84388edcbb8d.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_14986d72bc3cd568.spritec",
-    "size" : 133,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/detached.collectionc",
-    "size" : 119,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2c8d7ee61e5a2706.spritec",
-    "size" : 126,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/fonts/font-df.materialc",
-    "size" : 63,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e37b01df351b4076.spritec",
-    "size" : 123,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_320361bb18eefd20.goc",
-    "size" : 99,
-    "compressed_size" : 84,
-    "encrypted" : false
-  }, {
-    "file" : "/m/stuff/joystick.luac",
-    "size" : 3375,
-    "compressed_size" : 1312,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/resources/cactus.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/rock.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/thank_you/thank_you.guic",
-    "size" : 6821,
-    "compressed_size" : 1868,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex7.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/defigma/gradient.luac",
-    "size" : 2368,
-    "compressed_size" : 880,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_194f1133a8d1aa7b.spritec",
-    "size" : 135,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/custom/rich_text/module/rt.luac",
-    "size" : 13014,
-    "compressed_size" : 4184,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/thank_you/thank_you_defigma.luac",
-    "size" : 642,
-    "compressed_size" : 308,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_65af905fb1d68e46.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_uranium.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_5f417e94886a6e2.spritec",
-    "size" : 112,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2bd99266a362acbe.soundc",
-    "size" : 44,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/detached.goc",
-    "size" : 147,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2-turn2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6f8e2b947ffc5523.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy7/enemy7.texturec",
-    "size" : 65682,
-    "compressed_size" : 23816,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2-turn.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_37630c6f99838398.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_1f5df2a0f01e55c5.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_torchlight2.goc",
-    "size" : 237,
-    "compressed_size" : 216,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/funny.oggc",
-    "size" : 5629,
-    "compressed_size" : 4128,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/attachments.luac",
-    "size" : 1982,
-    "compressed_size" : 452,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_c87059346127058b.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e56df2e92d98391f.spritec",
-    "size" : 121,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/enemies/enemy1.collectionc",
-    "size" : 2004,
-    "compressed_size" : 964,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_mushroom.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/scroll.luac",
-    "size" : 16885,
-    "compressed_size" : 4952,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_491e5bcbd57dd242.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_988181cf97211d63.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7e8ff1c68bc23bb2.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9507d420f785993e.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/defigma/materials/linear_text.materialc",
-    "size" : 63,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/mushroom.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9e8d2c0977100216.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7da16a0ae6b03c96.camerac",
-    "size" : 22,
-    "compressed_size" : 24,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/portals/portal.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/hex_key_converter.luac",
-    "size" : 698,
-    "compressed_size" : 464,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_d37b905b8024cb1b.spritec",
-    "size" : 129,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8836b0ad25c87694.spritec",
-    "size" : 116,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3e9fe26725bce782.soundc",
-    "size" : 61,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex6.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/offer/offer.guic",
-    "size" : 11666,
-    "compressed_size" : 2644,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2e6866d3afbef321.spritec",
-    "size" : 122,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_ruby.goc",
-    "size" : 235,
-    "compressed_size" : 196,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ab6f8b855a6c779e.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a52f35c3c3eabde6.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a2213b118e1588e3.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c368a0dffad41386.goc",
-    "size" : 72,
-    "compressed_size" : 64,
+    "file" : "/_generated_2003ca77639814ce.goc",
+    "size" : 177,
+    "compressed_size" : 148,
     "encrypted" : false
   }, {
-    "file" : "/assets/sounds/uranium/Mangrove_roots_step1.oggc",
-    "size" : 18607,
-    "compressed_size" : 18608,
+    "file" : "/assets/textures/slidepuzzle/slidepuzzle.a.texturesetc",
+    "size" : 589,
+    "compressed_size" : 332,
     "encrypted" : false
   }, {
     "file" : "/_generated_5d65069b09744d50.soundc",
@@ -2534,754 +594,24 @@
     "compressed_size" : 944,
     "encrypted" : true
   }, {
-    "file" : "/modules/collision_hexes.luac",
-    "size" : 18416,
-    "compressed_size" : 4984,
+    "file" : "/druid/extended/container.luac",
+    "size" : 13334,
+    "compressed_size" : 3984,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/refineries/attachments/pickaxe_refinery_attachment.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4bd8fedc20c465d9.collectionproxyc",
-    "size" : 36,
-    "compressed_size" : 36,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_68e5a3c39731f16b.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/bug/bug.collectionc",
-    "size" : 99,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ff91a61e088a8a7c.goc",
-    "size" : 122,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b2c7a72358da8b19.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c18c4fbcc0a4dfd.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_fa4cc6b1fcf59a8a.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/uranium/Mangrove_roots_step3.oggc",
-    "size" : 18468,
-    "compressed_size" : 18468,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex8.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_1fb1f1a5a44acc14.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/rating/rating.collectionc",
-    "size" : 117,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/no_ads_offer/no_ads_offer_defigma.luac",
-    "size" : 648,
-    "compressed_size" : 308,
+    "file" : "/m/gui/menu.luac",
+    "size" : 731,
+    "compressed_size" : 420,
     "encrypted" : true
   }, {
-    "file" : "/bridge/defold_iap.luac",
-    "size" : 2485,
-    "compressed_size" : 1128,
+    "file" : "/collections/menu/menu_defigma.luac",
+    "size" : 470,
+    "compressed_size" : 160,
     "encrypted" : true
   }, {
-    "file" : "/collections/game/misc/decor/decor_coin.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_842814198a817204.goc",
-    "size" : 56,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4d63c8da02dea02.spritec",
-    "size" : 122,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7101dfbca4a50f6f.collectionfactoryc",
-    "size" : 52,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/game_ui/game_ui.texturec",
-    "size" : 4194453,
-    "compressed_size" : 616176,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_10702ba68b3ac849.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_diamond.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy2/enemy2_walk.oggc",
-    "size" : 8670,
-    "compressed_size" : 7184,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/sulphur/Ancient_Debris_dig3.oggc",
-    "size" : 19028,
-    "compressed_size" : 19028,
-    "encrypted" : false
-  }, {
-    "file" : "/lualib_bundle.luac",
-    "size" : 82919,
-    "compressed_size" : 17532,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/other/person.collectionc",
-    "size" : 2193,
-    "compressed_size" : 1172,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e3033db4a2dcc029.soundc",
-    "size" : 55,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_787c1841eeec8d04.goc",
-    "size" : 355,
-    "compressed_size" : 272,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/deposit/deposit.texturec",
-    "size" : 2097301,
-    "compressed_size" : 325504,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3d4b1d20151830b7.spritec",
-    "size" : 129,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_1185999403e5d643.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/panthera/panthera_internal.luac",
-    "size" : 12824,
-    "compressed_size" : 3960,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_32a7493f8c39b5d1.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/chest.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/attachments/plank_factory_attachment2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_44b27c9e0baf0019.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/boulder/Basalt_hit1.oggc",
-    "size" : 21259,
-    "compressed_size" : 21260,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/editor/editor.scriptc",
-    "size" : 82178,
-    "compressed_size" : 20008,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_f36a3ace53f83ac3.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/m/load_config.luac",
-    "size" : 9577,
-    "compressed_size" : 2956,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/object/objects4.texturec",
-    "size" : 262290,
-    "compressed_size" : 59316,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a98c673f4ac6c41e.spritec",
-    "size" : 129,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_83ed833e9b03e282.soundc",
-    "size" : 46,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/rating/rating.guic",
-    "size" : 27392,
-    "compressed_size" : 3864,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_spiral5.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/graphics/particle_blob.t.texturesetc",
-    "size" : 331,
-    "compressed_size" : 224,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_df8b434895e52599.goc",
-    "size" : 115,
-    "compressed_size" : 92,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/editor_ui/editor_ui.texturec",
-    "size" : 1048722,
-    "compressed_size" : 154012,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b5f2c9f847cd7cc1.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/offer_cat.collectionc",
-    "size" : 1263,
-    "compressed_size" : 696,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b433a6c778c5a072.soundc",
-    "size" : 61,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_21966cdc39028c91.spritec",
-    "size" : 136,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/settings/settings.guic",
-    "size" : 13851,
-    "compressed_size" : 2712,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7747a811b0cf2555.goc",
-    "size" : 36,
-    "compressed_size" : 36,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/helper.luac",
-    "size" : 10785,
-    "compressed_size" : 4296,
-    "encrypted" : true
-  }, {
-    "file" : "/m/detached_panels/chest_ui.luac",
-    "size" : 4087,
-    "compressed_size" : 1384,
-    "encrypted" : true
-  }, {
-    "file" : "/druid/system/druid_instance.luac",
-    "size" : 14291,
-    "compressed_size" : 4356,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_257c2868325b25b4.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_shell2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3c6827689be928ee.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/map.luac",
-    "size" : 24557,
-    "compressed_size" : 4720,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/enemy/enemy5/enemy5.texturec",
-    "size" : 65682,
-    "compressed_size" : 31316,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/marker.luac",
-    "size" : 3177,
-    "compressed_size" : 1140,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_958047e8a664babb.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8d50711be5afc92c.soundc",
-    "size" : 55,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/amethyst/Amethyst_Cluster_break1.oggc",
-    "size" : 39104,
-    "compressed_size" : 39104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border4.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/portal.luac",
-    "size" : 1823,
-    "compressed_size" : 968,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_6074a7edbd58fbc1.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e9da03218f188466.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/update_gain.luac",
-    "size" : 1198,
-    "compressed_size" : 496,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_c46e2785f406348f.soundc",
-    "size" : 49,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e42b486e628442b1.soundc",
-    "size" : 45,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/portal/portal.guic",
-    "size" : 14892,
-    "compressed_size" : 2504,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_plank.goc",
-    "size" : 213,
-    "compressed_size" : 176,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b8fba7b568997e76.soundc",
-    "size" : 54,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6227fb7b510e57a0.collectionfactoryc",
-    "size" : 51,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_de180a5ae716b002.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c8bdbad863138751.collectionfactoryc",
-    "size" : 51,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/m/scripts/alpha_attachment.scriptc",
-    "size" : 526,
-    "compressed_size" : 384,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_a9cfed5fd9cec8bb.goc",
-    "size" : 298,
-    "compressed_size" : 240,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3bd2724df80a3187.spritec",
-    "size" : 117,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2dbf2627d67b21b1.factoryc",
-    "size" : 40,
+    "file" : "/_generated_2043b6161fa4883b.collectionproxyc",
+    "size" : 44,
     "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/factory.luac",
-    "size" : 26468,
-    "compressed_size" : 6828,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_ca9834ed194720ca.spritec",
-    "size" : 144,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/iced_ship.goc",
-    "size" : 102,
-    "compressed_size" : 96,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/game.guic",
-    "size" : 24127,
-    "compressed_size" : 3260,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy1/enemy1.texturec",
-    "size" : 65682,
-    "compressed_size" : 29244,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_ruby.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/cactus/Bamboo_Sapling_dig4.oggc",
-    "size" : 13307,
-    "compressed_size" : 12544,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ea546c901c9ab96e.factoryc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/attachments.luac",
-    "size" : 1511,
-    "compressed_size" : 864,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_6b14d0b0a6cd37e0.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_27532b30d23dae57.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex5bridge_mirrored.goc",
-    "size" : 71,
-    "compressed_size" : 72,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/healthbar.luac",
-    "size" : 3448,
-    "compressed_size" : 1236,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/invite/invite.gui_scriptc",
-    "size" : 4357,
-    "compressed_size" : 1400,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_d8d8655d4090314.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_570caed9359f8b5a.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/attachments/plank_factory_attachment3.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_cow_skull.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/refineries/attachments/sword_refinery_attachment.goc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2787356472847804.collectionfactoryc",
-    "size" : 51,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/snow_pine.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_42d06d91ba69f5c4.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/box2d/utils.luac",
-    "size" : 4372,
-    "compressed_size" : 1428,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_3b79051f3cc3130f.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_lantern.goc",
-    "size" : 226,
-    "compressed_size" : 188,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/rect_res.luac",
-    "size" : 14523,
-    "compressed_size" : 4880,
-    "encrypted" : true
-  }, {
-    "file" : "/m/detached_panels/refinery_upgrade_panel.luac",
-    "size" : 7914,
-    "compressed_size" : 2064,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_4308f75eddd81abe.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/thank_you.luac",
-    "size" : 896,
-    "compressed_size" : 500,
-    "encrypted" : true
-  }, {
-    "file" : "/m/gui/reddit.luac",
-    "size" : 2880,
-    "compressed_size" : 1444,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_fdbbc75289368a11.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects33.texturec",
-    "size" : 262290,
-    "compressed_size" : 48564,
-    "encrypted" : false
-  }, {
-    "file" : "/scripts/game.scriptc",
-    "size" : 25957,
-    "compressed_size" : 8592,
-    "encrypted" : true
-  }, {
-    "file" : "/m/social_data.luac",
-    "size" : 1342,
-    "compressed_size" : 636,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/thank_you/thank_you.collectionc",
-    "size" : 120,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/effects/fx.particlefxc",
-    "size" : 405,
-    "compressed_size" : 312,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/hex_shadow_right.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_663d048af3143368.spritec",
-    "size" : 122,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_54a08aaced4515c5.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/fonts/neuron_black.fontc",
-    "size" : 508,
-    "compressed_size" : 508,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/rock/Stone_dig1shifted.oggc",
-    "size" : 9554,
-    "compressed_size" : 8988,
-    "encrypted" : false
-  }, {
-    "file" : "/m/scripts/create_fx.scriptc",
-    "size" : 1102,
-    "compressed_size" : 644,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_f9d930facf66a6b9.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/plank_factory.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/world.luac",
-    "size" : 622,
-    "compressed_size" : 380,
-    "encrypted" : true
-  }, {
-    "file" : "/modules/player.luac",
-    "size" : 26292,
-    "compressed_size" : 7712,
-    "encrypted" : true
-  }, {
-    "file" : "/debug-draw/debug-draw.luac",
-    "size" : 3942,
-    "compressed_size" : 1552,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_fc14f00a08a3f113.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_719c8f45f9c45ca.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7f6603d7b4160e86.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/event/events.luac",
-    "size" : 1139,
-    "compressed_size" : 412,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_9e3893f7287cf063.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/ruby/Copper_step2.oggc",
-    "size" : 18880,
-    "compressed_size" : 18880,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_12a66021969e82bb.goc",
-    "size" : 252,
-    "compressed_size" : 204,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/sword/fail_sound.oggc",
-    "size" : 23956,
-    "compressed_size" : 22480,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6fa0a52eb23f179f.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/ads_utils/ad_sound_mute.luac",
-    "size" : 2542,
-    "compressed_size" : 532,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_flower.goc",
-    "size" : 168,
-    "compressed_size" : 152,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ed5fda6cac2e7284.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e15c44b1c6074a71.spritec",
-    "size" : 111,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/particles/torch_fx2.goc",
-    "size" : 61,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/arrow.goc",
-    "size" : 74,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/tree/Wood_Walk_03.oggc",
-    "size" : 7109,
-    "compressed_size" : 5584,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border3.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects.texturec",
-    "size" : 4194453,
-    "compressed_size" : 846352,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2be536bb39095dac.spritec",
-    "size" : 120,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7662551614fd6aaf.goc",
-    "size" : 54,
-    "compressed_size" : 56,
     "encrypted" : false
   }, {
     "file" : "/_generated_NotoSansDevanagari-Black_3d370b4f1f847863.glyph_bankc",
@@ -3289,2070 +619,25 @@
     "compressed_size" : 52560,
     "encrypted" : false
   }, {
-    "file" : "/_generated_21ba1af1d0ef14d.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_48f130c70db4cd26.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_76d734be2625c52b.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_torchlight.goc",
-    "size" : 233,
-    "compressed_size" : 212,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/sword/revive.oggc",
-    "size" : 17267,
-    "compressed_size" : 15708,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ramp3.goc",
-    "size" : 69,
-    "compressed_size" : 72,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/azurite/Amethyst_place2.oggc",
-    "size" : 17765,
-    "compressed_size" : 17768,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ea7470047b63f80d.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/rating.luac",
-    "size" : 9324,
-    "compressed_size" : 3128,
+    "file" : "/wraptext/wraptext.luac",
+    "size" : 3260,
+    "compressed_size" : 1620,
     "encrypted" : true
-  }, {
-    "file" : "/_generated_e21b44d13b1399b8.factoryc",
-    "size" : 38,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_374c5750a5f9d31e.spritec",
-    "size" : 126,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9babb4390297791e.soundc",
-    "size" : 55,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/bug.luac",
-    "size" : 973,
-    "compressed_size" : 556,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_9b2d266f8d3dac3.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/editor/editor.gui_scriptc",
-    "size" : 3412,
-    "compressed_size" : 1232,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_6ac8e5f4aa45833d.soundc",
-    "size" : 56,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/particles/dark_flower.particlefxc",
-    "size" : 373,
-    "compressed_size" : 292,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_79b27f45476755a9.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e08f5c4f9805800f.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6e0b18d0e47a697d.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_5f80939bfc47245c.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_29bab2c78c90d67a.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e64a740b2be9ac6b.factoryc",
-    "size" : 43,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/tasks.luac",
-    "size" : 5302,
-    "compressed_size" : 1784,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_cfaeaa8f0f321e30.spritec",
-    "size" : 123,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/m/stuff/locales.luac",
-    "size" : 1673,
-    "compressed_size" : 672,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/animations/enemy6.luac",
-    "size" : 79364,
-    "compressed_size" : 3556,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_7c4554e684da138b.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_60c1600aa0939bd.soundc",
-    "size" : 55,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road1-turn.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/uranium/Mangrove_roots_step2.oggc",
-    "size" : 18741,
-    "compressed_size" : 18744,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e16dcab5ccf810a7.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b9fc2011857870d3.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/ogr_bribable.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/factory_craft_panel.luac",
-    "size" : 10556,
-    "compressed_size" : 2648,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/rating/choose_rating.gui_scriptc",
-    "size" : 4629,
-    "compressed_size" : 1428,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_1de65b8586141ef7.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/monarch/transitions/gui.luac",
-    "size" : 10258,
-    "compressed_size" : 2480,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/rating/choose_rating.collectionc",
-    "size" : 123,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6595cfa382f3aa26.soundc",
-    "size" : 45,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c1eb8253696cda07.spritec",
-    "size" : 118,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6973f512d66c962d.spritec",
-    "size" : 122,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3a87df00ddae9652.spritec",
-    "size" : 118,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ba17235534f3ca1a.goc",
-    "size" : 3672,
-    "compressed_size" : 1652,
-    "encrypted" : false
-  }, {
-    "file" : "/shader_7080802899218083337.spc",
-    "size" : 2401,
-    "compressed_size" : 1020,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/back_handler.luac",
-    "size" : 671,
-    "compressed_size" : 424,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/game1.collectionc",
-    "size" : 100241,
-    "compressed_size" : 22936,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/settings/settings.gui_scriptc",
-    "size" : 5979,
-    "compressed_size" : 1604,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_cb69d302e454fec5.factoryc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ad16e509be9e40e0.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_tree.goc",
-    "size" : 111,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/bug/bug_defigma.luac",
-    "size" : 630,
-    "compressed_size" : 300,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/fonts/noto_sans_cjk_black.fontc",
-    "size" : 1449,
-    "compressed_size" : 1452,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/animations/mining.luac",
-    "size" : 231795,
-    "compressed_size" : 7500,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_ee369f0fcb11aa57.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/game_ui/game_ui.a.texturesetc",
-    "size" : 23039,
-    "compressed_size" : 7260,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c1b93e75be01c027.spritec",
-    "size" : 126,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c3f0e2ba28166b86.soundc",
-    "size" : 49,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/offer.luac",
-    "size" : 1096,
-    "compressed_size" : 568,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_67a8377fff87673e.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_amethyst.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/text.luac",
-    "size" : 10021,
-    "compressed_size" : 2960,
-    "encrypted" : true
-  }, {
-    "file" : "/bridge/firebase.luac",
-    "size" : 1125,
-    "compressed_size" : 516,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_eb23230d239b5b04.spritec",
-    "size" : 119,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/invite/invite.collectionc",
-    "size" : 116,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c3b158adbdf6af03.spritec",
-    "size" : 126,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_639f1ab28923afd3.spritec",
-    "size" : 123,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a5a9f5404864e056.collectionproxyc",
-    "size" : 34,
-    "compressed_size" : 32,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/ruby/Copper_step4.oggc",
-    "size" : 17982,
-    "compressed_size" : 17984,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9e65c3c86ca7638a.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_5e42d3aae2d56f84.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/idle_animations.luac",
-    "size" : 7714,
-    "compressed_size" : 2232,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_8b7c266329661eb4.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/hover.luac",
-    "size" : 3475,
-    "compressed_size" : 1368,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_1bb18d0b1b1b3c46.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/extended/hotkey.luac",
-    "size" : 4054,
-    "compressed_size" : 1564,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_b58f833b480e8066.spritec",
-    "size" : 145,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d665419d52f4291d.soundc",
-    "size" : 46,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/character/character.a.texturesetc",
-    "size" : 11517,
-    "compressed_size" : 3520,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d83187b6f3a14a5b.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9104e2251d740a68.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/factory_refinery.luac",
-    "size" : 16706,
-    "compressed_size" : 3944,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_3c88ffd0ab24e695.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/localization.luac",
-    "size" : 53014,
-    "compressed_size" : 21752,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_6a6236dd0269c7a6.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_54a1fc530536dad3.factoryc",
-    "size" : 48,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/lava_edge_right.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8c816a877642ea02.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/resource.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects66.a.texturesetc",
-    "size" : 1649,
-    "compressed_size" : 756,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_90352708c243c427.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6895d0373428df22.spritec",
-    "size" : 129,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/loader/loader.guic",
-    "size" : 2082,
-    "compressed_size" : 752,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_af9babbf25e02440.soundc",
-    "size" : 43,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects66.texturec",
-    "size" : 395,
-    "compressed_size" : 300,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_core.goc",
-    "size" : 213,
-    "compressed_size" : 176,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f6d7d76f64270f7c.soundc",
-    "size" : 56,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ee18031c0e8d4bed.spritec",
-    "size" : 136,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_5efbbf3bafbb5aaf.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/tree.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy1/enemy1.a.texturesetc",
-    "size" : 4464,
-    "compressed_size" : 1616,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/sword/sword_attack.oggc",
-    "size" : 10607,
-    "compressed_size" : 9128,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_72d1d3b5d9af7353.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_lantern2_light.goc",
-    "size" : 135,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_86789f6b3a43bc7f.goc",
-    "size" : 251,
-    "compressed_size" : 204,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b88368a75ee28bde.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/pine.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/custom/rich_text/module/rt_parse.luac",
-    "size" : 3824,
-    "compressed_size" : 1780,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_ae1f74550af3b45b.factoryc",
-    "size" : 39,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/amethyst.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/attachments/plank_factory_attachment1.goc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_dc7c9fdc20ef65d6.goc",
-    "size" : 230,
-    "compressed_size" : 196,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_350c482da2af51f9.goc",
-    "size" : 179,
-    "compressed_size" : 148,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_fbeeff30b1569cca.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/base/blocker.luac",
-    "size" : 883,
-    "compressed_size" : 452,
-    "encrypted" : true
-  }, {
-    "file" : "/modules/bribable.luac",
-    "size" : 5951,
-    "compressed_size" : 2392,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_f73f22dcc4f80fef.spritec",
-    "size" : 117,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/rating/choose_rating.guic",
-    "size" : 11003,
-    "compressed_size" : 2240,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/editor_ui/editor_ui.a.texturesetc",
-    "size" : 1392,
-    "compressed_size" : 656,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/snow_rock/Azalea_break2.oggc",
-    "size" : 20626,
-    "compressed_size" : 20628,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a23fc962bd01fd83.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_632ffcc7ce6e199b.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/resource_shadow.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/detached.guic",
-    "size" : 41563,
-    "compressed_size" : 5584,
-    "encrypted" : false
-  }, {
-    "file" : "/m/scripts/music_loader_context.scriptc",
-    "size" : 207,
-    "compressed_size" : 176,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_8ca78508524a4677.spritec",
-    "size" : 136,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2ddf40fe7385330.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_c59531856f951cf.spritec",
-    "size" : 119,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/fonts/noto_sans_devanagari_black.fontc",
-    "size" : 426,
-    "compressed_size" : 428,
-    "encrypted" : false
-  }, {
-    "file" : "/m/druid/input_field.luac",
-    "size" : 3041,
-    "compressed_size" : 1256,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_3e621194404b3d56.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_lava.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/invite.luac",
-    "size" : 2035,
-    "compressed_size" : 1100,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_d90365c9c3bc7ce4.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/dead_tree.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_sword.goc",
-    "size" : 235,
-    "compressed_size" : 196,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy2/enemy2_attack.oggc",
-    "size" : 9416,
-    "compressed_size" : 7936,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects_other.texturec",
-    "size" : 267,
-    "compressed_size" : 204,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects6.texturec",
-    "size" : 395,
-    "compressed_size" : 344,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_64d2ead093d66fb8.soundc",
-    "size" : 52,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/shader_-8354705723625484620.spc",
-    "size" : 7952,
-    "compressed_size" : 2332,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ramp4.goc",
-    "size" : 69,
-    "compressed_size" : 72,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/no_ads_offer/no_ads_offer.collectionc",
-    "size" : 123,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/animations/enemy1.luac",
-    "size" : 246738,
-    "compressed_size" : 9712,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/sounds/cactus/Bamboo_Sapling_dig2.oggc",
-    "size" : 13978,
-    "compressed_size" : 13220,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8733c313431cf7aa.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4fe4ea59eb215b9.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_56a4037c8d2ed5fe.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3cfd91f11431b211.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/mushroom_chilling.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/create_rect_res.luac",
-    "size" : 3458,
-    "compressed_size" : 1572,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/other/offer_cat.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/hex_shadow_left.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2b4ba12a5c7d71f.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/hex_opened_count.luac",
-    "size" : 1231,
-    "compressed_size" : 644,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/sounds/pine/Wood_dig1.oggc",
-    "size" : 6541,
-    "compressed_size" : 6208,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b5e01d5c338ceace.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_28f26f1b3f706f01.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_169b4a6b3a7682c9.spritec",
-    "size" : 127,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/rating/rating.gui_scriptc",
-    "size" : 10105,
-    "compressed_size" : 1740,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_f098fba96036941d.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6bfe831bd3dfe5c8.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_25a22bce10ee3bd8.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/arrow.luac",
-    "size" : 6478,
-    "compressed_size" : 2228,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_473d648acbed61da.collectionproxyc",
-    "size" : 54,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/mountine2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a82387baa90360a7.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/particles/torch.particlefxc",
-    "size" : 373,
-    "compressed_size" : 288,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_14986607304854b4.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2106e52834359ad8.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_17825cd49aaa51ab.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ba77e661f88ee23e.spritec",
-    "size" : 117,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a717fb16d7eaa43d.spritec",
-    "size" : 133,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e59c09edd3ef3693.soundc",
-    "size" : 56,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d602cf3608c93912.collectionproxyc",
-    "size" : 37,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border7.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/ruby/Copper_break3.oggc",
-    "size" : 16182,
-    "compressed_size" : 16184,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_step2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d2da739ff4bce3c2.spritec",
-    "size" : 118,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects7.texturec",
-    "size" : 395,
-    "compressed_size" : 348,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ffcdb0c8b2d8528a.goc",
-    "size" : 58,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/cjk_switcher.scriptc",
-    "size" : 1443,
-    "compressed_size" : 588,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_f893a367c8476ed9.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9f1b019f8561b508.collectionproxyc",
-    "size" : 52,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_85aecde6c5f82abf.spritec",
-    "size" : 116,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/physics.luac",
-    "size" : 16562,
-    "compressed_size" : 4252,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/object/objects7.a.texturesetc",
-    "size" : 7018,
-    "compressed_size" : 2292,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy2/enemy2.texturec",
-    "size" : 65682,
-    "compressed_size" : 33884,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_331b314b928e3ebf.goc",
-    "size" : 83,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b71f358ea5779027.goc",
-    "size" : 224,
-    "compressed_size" : 192,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6736387e74c0e7f2.goc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/boulder.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2-cross3.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_76d80e66d6b00649.spritec",
-    "size" : 127,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7e0a061ac3d87bbe.soundc",
-    "size" : 48,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects_common.texturec",
-    "size" : 131218,
-    "compressed_size" : 29296,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/editor/editor.guic",
-    "size" : 41217,
-    "compressed_size" : 4528,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a1bfd2f746b14fae.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_214d6fa9f7553559.factoryc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/extended/layout.luac",
-    "size" : 10081,
-    "compressed_size" : 2920,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/resources/sulphur.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_44c21802a032716e.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_75128e5071dc5e3c.spritec",
-    "size" : 136,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b8251f553f7edd70.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_51b048c6caede52c.spritec",
-    "size" : 129,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/portal/portal.collectionc",
-    "size" : 117,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_coin.goc",
-    "size" : 112,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9eb36e0dfa15a801.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_789119d96f0b969d.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/shader_6592067761991147028.spc",
-    "size" : 6324,
-    "compressed_size" : 1812,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_81ed2131a0af59d5.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_83f1fa657ffeb20d.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/dead_tree/Azalea_Leaves_break7.oggc",
-    "size" : 17025,
-    "compressed_size" : 17028,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy5/enemy5_attack.oggc",
-    "size" : 16145,
-    "compressed_size" : 14656,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/factories/steel_factory.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2_end2.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_49b96bcb07a43ba0.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/ads_utils/ad_timer.luac",
-    "size" : 1339,
-    "compressed_size" : 516,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/settings/settings.collectionc",
-    "size" : 119,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b3daef3b0c2583db.spritec",
-    "size" : 128,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_437fc6c90015a39.spritec",
-    "size" : 144,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_7ff845c990d35b05.spritec",
-    "size" : 117,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2a6e164f3e3bc382.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/tweener/tweener.luac",
-    "size" : 11399,
-    "compressed_size" : 3356,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2_end.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8d1afb2b833e4f6.soundc",
-    "size" : 34,
-    "compressed_size" : 36,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/hex_open_actions.luac",
-    "size" : 4485,
-    "compressed_size" : 2088,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_2f5b6584a0e8d56.goc",
-    "size" : 178,
-    "compressed_size" : 148,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e08fdc514235341a.spritec",
-    "size" : 123,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/snow_rock.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/adsres.luac",
-    "size" : 12888,
-    "compressed_size" : 4416,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_eba2daf35c283950.goc",
-    "size" : 38,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/welcome_offer/welcome_offer.collectionc",
-    "size" : 124,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/mountine1.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/enemies/enemy2.collectionc",
-    "size" : 1766,
-    "compressed_size" : 864,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b742e4ad2d127c24.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2d2f859ae7252481.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/walk/Gravel_dig2.oggc",
-    "size" : 7501,
-    "compressed_size" : 7504,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/character/character.texturec",
-    "size" : 262290,
-    "compressed_size" : 119620,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex5bridge.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f2b9a3449700f6fe.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6cdbe2dcd5ddf139.spritec",
-    "size" : 124,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8152319b91702ad1.goc",
-    "size" : 85,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f77f23d7c0938ce8.spritec",
-    "size" : 129,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_3ed865a8f1fb572f.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/invite/invite.guic",
-    "size" : 10377,
-    "compressed_size" : 2396,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/interstitial/interstitial.collectionc",
-    "size" : 123,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_92ea59303ac22998.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6ad3925fa00f602f.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/materials/sprite.materialc",
-    "size" : 145,
-    "compressed_size" : 148,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border8.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/offers.luac",
-    "size" : 4658,
-    "compressed_size" : 1672,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_Noto Sans CJK Black_6dc4d80990c41af.glyph_bankc",
-    "size" : 261251,
-    "compressed_size" : 261252,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/reddit/reddit.gui_scriptc",
-    "size" : 4321,
-    "compressed_size" : 1400,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_ecbb21451e8cb521.goc",
-    "size" : 72,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d60673492c8cc73c.spritec",
-    "size" : 118,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_34ea28a682bcd50d.spritec",
-    "size" : 126,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6bf591789155c4dc.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4fda2b66ae5bb9fb.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e08eb11d3aabd524.spritec",
-    "size" : 118,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_13fd70adaa376053.soundc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_parrot.goc",
-    "size" : 102,
-    "compressed_size" : 96,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_24735e9deb1f30da.spritec",
-    "size" : 132,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/shader_5718438554900293640.spc",
-    "size" : 1926,
-    "compressed_size" : 868,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/game.luac",
-    "size" : 19655,
-    "compressed_size" : 6408,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/all_go.collectionc",
-    "size" : 12660,
-    "compressed_size" : 2688,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/applovin_max.luac",
-    "size" : 8494,
-    "compressed_size" : 2140,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_4f95f5d8f6ffc6d7.spritec",
-    "size" : 142,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2043b6161fa4883b.collectionproxyc",
-    "size" : 44,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_spiral2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/no_ads_offer/no_ads_offer.gui_scriptc",
-    "size" : 4237,
-    "compressed_size" : 1524,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/sounds/enemy/death_sound.oggc",
-    "size" : 16657,
-    "compressed_size" : 15168,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_bd5860330e84cbc7.spritec",
-    "size" : 135,
-    "compressed_size" : 128,
-    "encrypted" : false
   }, {
     "file" : "/m/permanent_options.luac",
-    "size" : 310,
-    "compressed_size" : 204,
-    "encrypted" : true
-  }, {
-    "file" : "/defsave/utf8.luac",
-    "size" : 19851,
-    "compressed_size" : 5868,
-    "encrypted" : true
-  }, {
-    "file" : "/modules/rect_res_obj.luac",
-    "size" : 14656,
-    "compressed_size" : 4744,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_99d659e54c39f037.soundc",
-    "size" : 61,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_30d0c7be72a5dcab.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_abf1e68ea7dbe958.spritec",
-    "size" : 128,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/resources/diamond.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_ark.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f45630a0370b5e7c.collectionproxyc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d86df36208c5dcb.spritec",
-    "size" : 119,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/dynamic_physics_body.luac",
-    "size" : 13394,
-    "compressed_size" : 4212,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_grass.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects5.a.texturesetc",
-    "size" : 3010,
-    "compressed_size" : 1176,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_65853dcbb6f859ee.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/sulphur/Ancient_Debris_dig4.oggc",
-    "size" : 18054,
-    "compressed_size" : 18056,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/amethyst/Amethyst_Cluster_break2.oggc",
-    "size" : 36236,
-    "compressed_size" : 36236,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/offer_screen_general.luac",
-    "size" : 3386,
-    "compressed_size" : 1396,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_5bff1792ed09c8c1.soundc",
-    "size" : 43,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/gui.goc",
-    "size" : 81,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b305729153a7758b.soundc",
-    "size" : 51,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_df3df8a088a2ceb5.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/enemy/enemy6/enemy6_walk2.oggc",
-    "size" : 8507,
-    "compressed_size" : 6972,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sign_amethyst.goc",
-    "size" : 228,
-    "compressed_size" : 192,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4173688401c096ae.collectionproxyc",
-    "size" : 38,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/other/input/game.input_bindingc",
-    "size" : 381,
-    "compressed_size" : 280,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/object/objects44.texturec",
-    "size" : 262290,
-    "compressed_size" : 59200,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2-cross4.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_b76b377bff4c14ad.soundc",
-    "size" : 57,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_220965b16aaf73b5.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/lava_stone2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/other/materials/detached_gui.materialc",
-    "size" : 67,
-    "compressed_size" : 68,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_12f111d82ec387b9.factoryc",
-    "size" : 50,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_373129a90007c1cb.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/adsres/adsres_sulphur.goc",
-    "size" : 111,
-    "compressed_size" : 100,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_825662150ee4d544.spritec",
-    "size" : 125,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8f50f2e5b25fddf.factoryc",
-    "size" : 47,
-    "compressed_size" : 48,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/refineries/pickaxe_refinery.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_8b685128d1e696b8.goc",
-    "size" : 292,
-    "compressed_size" : 232,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/detached.luac",
-    "size" : 3572,
-    "compressed_size" : 1108,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/object/objects77.texturec",
-    "size" : 395,
-    "compressed_size" : 324,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6dcb34a055d1f439.spritec",
-    "size" : 123,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_ffe45fa86dcb6661.goc",
-    "size" : 223,
-    "compressed_size" : 188,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4119167ecc5bed74.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_fc4c90eb24358b8b.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a5c897df469265e0.soundc",
-    "size" : 58,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border6.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/generated/grass_animate.luac",
-    "size" : 10960,
-    "compressed_size" : 920,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_510ab14f187b7bb.factoryc",
-    "size" : 43,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_faf6870c5e7624c7.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/m/music.luac",
-    "size" : 4674,
-    "compressed_size" : 1616,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_bba8fffbb0cefc4a.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/update/start_menu.scriptc",
-    "size" : 4515,
-    "compressed_size" : 1976,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/lava_stone.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_spiral3.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_32805e4d8ed2a704.soundc",
-    "size" : 40,
-    "compressed_size" : 40,
-    "encrypted" : false
-  }, {
-    "file" : "/other/render/orthographic.render_scriptc",
-    "size" : 2750,
-    "compressed_size" : 1096,
-    "encrypted" : true
-  }, {
-    "file" : "/m/druid/endless_list.luac",
-    "size" : 6128,
-    "compressed_size" : 2032,
-    "encrypted" : true
-  }, {
-    "file" : "/modules/hex.luac",
-    "size" : 32084,
-    "compressed_size" : 9448,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_87c4dc616fccb094.spritec",
-    "size" : 131,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2e7bca0007f546df.spritec",
-    "size" : 115,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_361d9ea09186926d.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/refinery.luac",
-    "size" : 25730,
-    "compressed_size" : 6624,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_spiral.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_2a7a48960624d844.goc",
-    "size" : 58,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_6f7f34adc071a89.soundc",
-    "size" : 54,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/m/detached_panels/factory_time_panel.luac",
-    "size" : 6668,
-    "compressed_size" : 2104,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_sand_grass.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_d491b08fbcda319f.spritec",
-    "size" : 133,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a6f53a939812ef7.spritec",
-    "size" : 145,
-    "compressed_size" : 136,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_9b90d2c96a8afe87.spritec",
-    "size" : 136,
-    "compressed_size" : 128,
-    "encrypted" : false
-  }, {
-    "file" : "/builtins/materials/particlefx.materialc",
-    "size" : 108,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a1820dcc141c320f.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_60a08b1946f3797.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/enemy_factory.luac",
-    "size" : 2458,
-    "compressed_size" : 1064,
-    "encrypted" : true
-  }, {
-    "file" : "/m/scripts/create_go_fx_adsres.scriptc",
-    "size" : 1859,
-    "compressed_size" : 856,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_5b99396ece7d4271.goc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/druid/system/settings.luac",
-    "size" : 201,
+    "size" : 262,
     "compressed_size" : 184,
     "encrypted" : true
   }, {
-    "file" : "/_generated_459e516a0ffb627c.spritec",
-    "size" : 133,
-    "compressed_size" : 124,
+    "file" : "/_generated_30a4647c4be1262.goc",
+    "size" : 38,
+    "compressed_size" : 40,
     "encrypted" : false
   }, {
-    "file" : "/assets/sounds/cactus/Bamboo_Sapling_dig3.oggc",
-    "size" : 13630,
-    "compressed_size" : 12868,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_66221afc7d0642dd.collectionproxyc",
-    "size" : 46,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/other/fon.goc",
-    "size" : 53,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_42c757aaa46027f0.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/m/camera_animate.luac",
-    "size" : 402,
-    "compressed_size" : 272,
+    "file" : "/collections/loader/fix_druid.luac",
+    "size" : 4327,
+    "compressed_size" : 1536,
     "encrypted" : true
-  }, {
-    "file" : "/_generated_fe27d1830ce9d3b3.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/offer/offer.collectionc",
-    "size" : 116,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/deposit/deposit.a.texturesetc",
-    "size" : 4409,
-    "compressed_size" : 1376,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_flower2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/textures/enemy/enemy6/enemy6.texturec",
-    "size" : 131218,
-    "compressed_size" : 45992,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_93edd722c4fd346d.spritec",
-    "size" : 118,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_a50de5ebf6c8ddbb.soundc",
-    "size" : 57,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_lantern_light.goc",
-    "size" : 135,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_1a087bad306b7cf2.soundc",
-    "size" : 54,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/enemies/enemy5.collectionc",
-    "size" : 1618,
-    "compressed_size" : 796,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex48.goc",
-    "size" : 0,
-    "compressed_size" : 0,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/welcome_offer/welcome_offer.gui_scriptc",
-    "size" : 3950,
-    "compressed_size" : 1496,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/object/objects33.a.texturesetc",
-    "size" : 2776,
-    "compressed_size" : 1092,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e757479c8fc66d31.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border48.goc",
-    "size" : 54,
-    "compressed_size" : 56,
-    "encrypted" : false
-  }, {
-    "file" : "/bridge/playgama.luac",
-    "size" : 21161,
-    "compressed_size" : 5348,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_993a5eb220781606.soundc",
-    "size" : 54,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_5c2c9b2911054946.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/snow_rock/Azalea_break3.oggc",
-    "size" : 21697,
-    "compressed_size" : 21700,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/hex_verts.luac",
-    "size" : 4164,
-    "compressed_size" : 1744,
-    "encrypted" : true
-  }, {
-    "file" : "/defigma/materials/linear.materialc",
-    "size" : 62,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4ff3743d4e13dd20.spritec",
-    "size" : 118,
-    "compressed_size" : 108,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_22df7b579d59886f.goc",
-    "size" : 85,
-    "compressed_size" : 76,
-    "encrypted" : false
-  }, {
-    "file" : "/panthera/adapters/adapter_gui.luac",
-    "size" : 13106,
-    "compressed_size" : 3932,
-    "encrypted" : true
-  }, {
-    "file" : "/bridge/context.luac",
-    "size" : 259,
-    "compressed_size" : 128,
-    "encrypted" : true
-  }, {
-    "file" : "/m/adsres_open.luac",
-    "size" : 340,
-    "compressed_size" : 208,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_5b59e7ae4393bd00.spritec",
-    "size" : 129,
-    "compressed_size" : 124,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_road2-cross2.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_91031877c78230b6.spritec",
-    "size" : 120,
-    "compressed_size" : 112,
-    "encrypted" : false
-  }, {
-    "file" : "/m/special_rect_res_positions.luac",
-    "size" : 110,
-    "compressed_size" : 112,
-    "encrypted" : true
-  }, {
-    "file" : "/monarch/transitions/easings.luac",
-    "size" : 707,
-    "compressed_size" : 332,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/decor/decor_shell1.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_cc6eaaf25593f3b7.collectionfactoryc",
-    "size" : 49,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/reddit/reddit.collectionc",
-    "size" : 117,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_e0936368158e874b.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_88e780fee0f155ca.soundc",
-    "size" : 49,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/interstitial/interstitial.gui_scriptc",
-    "size" : 2109,
-    "compressed_size" : 968,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_c561c349984f03a9.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/sounds/rock/Stone_dig1.oggc",
-    "size" : 6695,
-    "compressed_size" : 6696,
-    "encrypted" : false
-  }, {
-    "file" : "/collections/game/misc/decor/decor_tile_spiral4.goc",
-    "size" : 64,
-    "compressed_size" : 64,
-    "encrypted" : false
-  }, {
-    "file" : "/modules/enemy.luac",
-    "size" : 18958,
-    "compressed_size" : 6300,
-    "encrypted" : true
-  }, {
-    "file" : "/druid/extended/slider.luac",
-    "size" : 4423,
-    "compressed_size" : 1700,
-    "encrypted" : true
-  }, {
-    "file" : "/collections/game/misc/hexes/hex_border5.goc",
-    "size" : 59,
-    "compressed_size" : 60,
-    "encrypted" : false
-  }, {
-    "file" : "/m/gui/choose_rating.luac",
-    "size" : 1289,
-    "compressed_size" : 652,
-    "encrypted" : true
-  }, {
-    "file" : "/m/scripts/music_set.scriptc",
-    "size" : 273,
-    "compressed_size" : 196,
-    "encrypted" : true
-  }, {
-    "file" : "/assets/textures/enemy/enemy6/enemy6.a.texturesetc",
-    "size" : 3430,
-    "compressed_size" : 1300,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_f7c5ae227b9f7943.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_55a3fc4a6bed5f09.soundc",
-    "size" : 41,
-    "compressed_size" : 44,
-    "encrypted" : false
-  }, {
-    "file" : "/m/scripts/animate_blub.scriptc",
-    "size" : 868,
-    "compressed_size" : 468,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_3784e38c761a393a.soundc",
-    "size" : 52,
-    "compressed_size" : 52,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_4e3161ffc000a612.spritec",
-    "size" : 116,
-    "compressed_size" : 104,
-    "encrypted" : false
-  }, {
-    "file" : "/assets/animations/enemy7.luac",
-    "size" : 80413,
-    "compressed_size" : 3768,
-    "encrypted" : true
-  }, {
-    "file" : "/druid/extended/container.luac",
-    "size" : 13317,
-    "compressed_size" : 3980,
-    "encrypted" : true
-  }, {
-    "file" : "/m/payments_action.luac",
-    "size" : 1347,
-    "compressed_size" : 760,
-    "encrypted" : true
-  }, {
-    "file" : "/_generated_5af5763ca3bee418.spritec",
-    "size" : 130,
-    "compressed_size" : 120,
-    "encrypted" : false
-  }, {
-    "file" : "/_generated_231f0c294c76add2.spritec",
-    "size" : 124,
-    "compressed_size" : 116,
-    "encrypted" : false
   }, {
     "file" : "/builtins/materials/gui.materialc",
     "size" : 66,
