@@ -1,6 +1,7 @@
 {
   "project_git" : {
-    "sha1" : "7918f667c921031b4a1e6dd8e542198c121db9d9",
+    "sha1" : "35a632baf58521204c75a66b8c8b80b9299f73d7",
+    "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
   "bob_arguments" : {

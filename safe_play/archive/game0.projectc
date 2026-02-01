@@ -2,7 +2,7 @@
 
 [project]
 title = SafePlay
-version = 0.0.6
+version = 0.0.7
 publisher = 
 developer = 
 write_log = 0
@@ -18,8 +18,8 @@ height = 1920
 high_dpi = 1
 samples = 0
 fullscreen = 0
-display_profiles = /builtins/render/default.display_profilesc
-dynamic_orientation = 0
+display_profiles = /other/display.display_profilesc
+dynamic_orientation = 1
 update_frequency = 0
 swap_interval = 1
 vsync = 1
@@ -237,4 +237,7 @@ max_time_step = 0.033333
 
 [native_extension]
 app_manifest = /other/manifest.appmanifest
+
+[safearea]
+resize_game_view = 0
 
