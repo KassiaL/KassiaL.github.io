@@ -2,13 +2,14 @@
 
 [project]
 title = SafePlay
-version = 0.0.10
+version = 0.0.17
 publisher = 
 developer = 
 write_log = 0
 write_log_file = 0
 minimum_log_level = 1
 compress_archive = 1
+custom_resources = /assets/textures/jigsaw/puzzle_images,/assets/textures/jigsaw/puzzles
 bundle_resources = res
 title_as_file_name = SafePlay
 
@@ -61,7 +62,7 @@ sub_step_count = 4
 
 [bootstrap]
 main_collection = /collections/loader/loader.collectionc
-render = /builtins/render/default.renderc
+render = /other/render/render.renderc
 debug_init_script = 
 
 [graphics]
