@@ -2,14 +2,14 @@
 
 [project]
 title = SafePlay
-version = 0.0.18
+version = 0.0.19
 publisher = 
 developer = 
 write_log = 0
 write_log_file = 0
 minimum_log_level = 1
 compress_archive = 1
-custom_resources = /assets/textures/jigsaw/puzzle_images,/assets/textures/jigsaw/puzzles
+custom_resources = /assets/textures/dynamic_images
 bundle_resources = res
 title_as_file_name = SafePlay
 
