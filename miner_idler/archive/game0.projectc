@@ -2,7 +2,7 @@
 
 [project]
 title = Miner Idler
-version = 0.0.2
+version = 0.0.3
 publisher = Sergey Kurbyko
 developer = Sergey Kurbyko
 write_log = 0
