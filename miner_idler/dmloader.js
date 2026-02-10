@@ -215,15 +215,15 @@ var FileLoader = {
 var EngineLoader = {
     arc_sha1: "",
     wasm_sha1: "",
-    wasm_size: 2229880,
+    wasm_size: 2715387,
     wasmjs_sha1: "",
-    wasmjs_size: 286069,
+    wasmjs_size: 285127,
     wasm_pthread_sha1: "",
-    wasm_pthread_size: 2244190,
+    wasm_pthread_size: 2727897,
     wasmjs_pthread_sha1: "",
-    wasmjs_pthread_size: 274378,
+    wasmjs_pthread_size: 273424,
     asmjs_sha1: "",
-    asmjs_size: 4589845,
+    asmjs_size: 5266245,
     wasm_instantiate_progress: 0,
 
     stream_wasm: "false" === "true",
@@ -1269,9 +1269,9 @@ Module["locateFile"] = function(path, scriptDirectory)
     // we need to replace it here with the correct project name.
     if (path == "dmengine.wasm" || path == "dmengine_release.wasm" || path == "dmengine_headless.wasm") {
         if (Module['isWASMPthreadSupported']) {
-            path = "Universe_pthread.wasm";
+            path = "MinerIdler_pthread.wasm";
         } else {
-            path = "Universe.wasm";
+            path = "MinerIdler.wasm";
         }
     }
     return scriptDirectory + path;

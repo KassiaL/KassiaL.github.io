@@ -1,0 +1,152 @@
+{
+	"$schema": "https://bridge.playgama.com/v1.26.0/schema.json",
+	"platforms": {
+		"game_distribution": {
+			"gameId": ""
+		},
+		"telegram": {
+			"adsgramBlockId": ""
+		},
+		"y8": {
+			"gameId": "",
+			"adsenseId": "",
+			"channelId": ""
+		},
+		"lagged": {
+			"devId": "",
+			"publisherId": ""
+		},
+		"huawei": {
+			"appId": ""
+		},
+		"msn": {
+			"gameId": ""
+		},
+		"discord": {
+			"appId": ""
+		},
+		"gamepush": {
+			"projectId": "",
+			"publicToken": ""
+		},
+		"crazy_games": {
+			"xsollaProjectId": "",
+			"isSandbox": false,
+			"useUserToken": false
+		},
+		"facebook": {
+			"subscribeForNotificationsOnStart": true,
+			"sendAnalyticsEvents": false
+		},
+		"yandex": {
+			"useSignedData": false,
+			"sendAnalyticsEvents": false
+		},
+		"youtube": {
+			"sendAnalyticsEvents": false
+		}
+	},
+	"advertisement": {
+		"interstitial": {
+			"preloadOnStart": true
+		},
+		"rewarded": {
+			"preloadOnStart": true
+		},
+		"useBuiltInErrorPopup": true,
+		"backfillId": ""
+	},
+	"payments": [
+		{
+			"id": "cat_offer",
+			"playgama": {
+				"amount": 80
+			},
+			"playdeck": {
+				"amount": 10000,
+				"description": "Get a lot of resources. Our best offer"
+			}
+		},
+		{
+			"id": "azurite_offer",
+			"playgama": {
+				"amount": 20
+			},
+			"playdeck": {
+				"amount": 2500,
+				"description": "Get the resources of the third location"
+			}
+		},
+		{
+			"id": "amethyst_offer",
+			"playgama": {
+				"amount": 20
+			},
+			"playdeck": {
+				"amount": 2500,
+				"description": "Get the resources of the fourth location"
+			}
+		},
+		{
+			"id": "mushroom_offer",
+			"playgama": {
+				"amount": 20
+			},
+			"playdeck": {
+				"amount": 2500,
+				"description": "Get the resources of the fifth location"
+			}
+		},
+		{
+			"id": "diamond_offer",
+			"playgama": {
+				"amount": 20
+			},
+			"playdeck": {
+				"amount": 2500,
+				"description": "Get the resources of the sixth location"
+			}
+		},
+		{
+			"id": "sulphur_offer",
+			"playgama": {
+				"amount": 20
+			},
+			"playdeck": {
+				"amount": 2500,
+				"description": "Get the resources of the seventh location"
+			}
+		},
+		{
+			"id": "ruby_offer",
+			"playgama": {
+				"amount": 20
+			},
+			"playdeck": {
+				"amount": 2500,
+				"description": "Get the resources of the eighth location"
+			}
+		},
+		{
+			"id": "ads_offer",
+			"playgama": {
+				"amount": 19
+			},
+			"playdeck": {
+				"amount": 2499,
+				"description": "NO MORE ADS AND BANNERS, JUST PLAY LIKE A KING!"
+			}
+		}
+	],
+	"leaderboards": [
+		{
+			"id": "hexleaderboard"
+		},
+		{
+			"id": "coinleaderboard"
+		}
+	],
+	"sendAnalyticsEvents": true,
+	"showFullLoadingLogo": false,
+	"disableLoadingLogo": true
+}
