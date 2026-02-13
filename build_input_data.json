@@ -1,15 +1,15 @@
 {
   "project_git" : {
-    "sha1" : "be82101ac288910f9b40fc5f151bb253ea47e91f",
+    "sha1" : "1f6132a075dad5c643286a1a6640fc9f61f38503",
     "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
   "bob_arguments" : {
-    "sha1" : "758dfc0ea71dca26d169fddd0c5a1bc6dd0be4b3",
-    "version" : "1.11.1",
-    "timestamp" : "2025-10-17 09:41:02"
+    "sha1" : "16c6fd602f32de4814660672c38ce3ccbbc1fb59",
+    "version" : "1.12.1",
+    "timestamp" : "2026-02-05 20:53:11"
   },
-  "defold_sdk" : "758dfc0ea71dca26d169fddd0c5a1bc6dd0be4b3",
+  "defold_sdk" : "16c6fd602f32de4814660672c38ce3ccbbc1fb59",
   "dependencies" : [ {
     "link" : "https://github.com/Insality/druid/archive/refs/tags/1.1.4.zip",
     "md5" : "575D68D7E843B74BFBBC39F3847395AB"

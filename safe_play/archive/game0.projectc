@@ -1,8 +1,6 @@
-[]
-
 [project]
 title = SafePlay
-version = 0.0.26
+version = 0.0.27
 publisher = 
 developer = 
 write_log = 0
@@ -125,6 +123,7 @@ max_count = 64
 max_animation_count = 1024
 max_particle_count = 1024
 max_particlefx_count = 64
+safe_area_mode = none
 
 [collection]
 max_instances = 4096
@@ -153,7 +152,7 @@ localizations = en
 [android]
 version_code = 1
 minimum_sdk_version = 23
-target_sdk_version = 35
+target_sdk_version = 36
 package = com.example.safeplay
 gcm_sender_id = 
 fcm_application_id = 
@@ -206,6 +205,7 @@ http_cache_enabled = 1
 
 [library]
 include_dirs = 
+defold_min_version = 
 
 [script]
 shared_state = 1
@@ -238,6 +238,8 @@ max_time_step = 0.033333
 
 [native_extension]
 app_manifest = /other/manifest.appmanifest
+
+[monarch]
 
 [safearea]
 resize_game_view = 0
