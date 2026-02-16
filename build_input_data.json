@@ -1,8 +1,8 @@
 {
   "project_git" : {
-    "sha1" : "1f6132a075dad5c643286a1a6640fc9f61f38503",
-    "origin" : "https://github.com/Anisin/SafePlay.git",
-    "branch" : "main"
+    "sha1" : "5ffc935b0f6adb1af7c0f7df877c71bd872f1086",
+    "origin" : "https://github.com/KassiaL/My_Little_Universe.git",
+    "branch" : "master"
   },
   "bob_arguments" : {
     "sha1" : "16c6fd602f32de4814660672c38ce3ccbbc1fb59",
@@ -11,16 +11,55 @@
   },
   "defold_sdk" : "16c6fd602f32de4814660672c38ce3ccbbc1fb59",
   "dependencies" : [ {
+    "link" : "https://github.com/britzl/defold-orthographic/archive/refs/tags/3.4.0.zip",
+    "md5" : "6145181B4CF7433B8E156A965EE0CBB0"
+  }, {
+    "link" : "https://github.com/defold/extension-firebase/archive/master.zip",
+    "md5" : "580758359BDCA59E1187AC42AF04C8CD"
+  }, {
+    "link" : "https://github.com/indiesoftby/defold-liveupdate-reszip/archive/main.zip",
+    "md5" : "0CB3461F7DE4C3BE94DCDE966EF570DE"
+  }, {
     "link" : "https://github.com/Insality/druid/archive/refs/tags/1.1.4.zip",
     "md5" : "575D68D7E843B74BFBBC39F3847395AB"
+  }, {
+    "link" : "https://github.com/subsoap/defsave/archive/master.zip",
+    "md5" : "19999A19A9A9E492007336E297EE713C"
   }, {
     "link" : "https://github.com/britzl/monarch/archive/master.zip",
     "md5" : "F3B35BA3B942CB763285DB325845613D"
   }, {
-    "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
-    "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+    "link" : "https://github.com/megalanthus/defold-gamepush/archive/master.zip",
+    "md5" : "A29891604BF00C863055845B63DA6A01"
+  }, {
+    "link" : "https://github.com/subsoap/defos/archive/refs/tags/v2.8.3.zip",
+    "md5" : "3A79AEE85DA1EC58B4CAB58E1D85B395"
+  }, {
+    "link" : "https://github.com/rgrams/debug-draw/archive/master.zip",
+    "md5" : "2006D2C0734C298ADD3485320896262C"
+  }, {
+    "link" : "https://github.com/britzl/defold-screenshot/archive/master.zip",
+    "md5" : "8EFB10A85C3E67E15D80B6F545B3305B"
   }, {
     "link" : "https://github.com/Insality/defold-tweener/archive/refs/tags/3.zip",
     "md5" : "CFB85626C718FEA631D61A22BF55E70C"
+  }, {
+    "link" : "https://github.com/KassiaL/Defigma_Defold/archive/master.zip",
+    "md5" : "4DE46686C96BF2A3C491E4713D1626F1"
+  }, {
+    "link" : "https://github.com/Insality/panthera/archive/refs/tags/runtime.4.zip",
+    "md5" : "B15715041B3BC5FB324796ACB77277BB"
+  }, {
+    "link" : "https://github.com/defold/extension-firebase-analytics/archive/master.zip",
+    "md5" : "41514D39486935D57E60651F5635BF12"
+  }, {
+    "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
+    "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+  }, {
+    "link" : "https://github.com/d954mas/defold-box2d/archive/master.zip",
+    "md5" : "B9D4927DF822E94FD2FD9D1C7886D27F"
+  }, {
+    "link" : "https://github.com/indiesoftby/defold-sentinel/archive/master.zip",
+    "md5" : "3F50C2DB9FB48624DF2F4091ABBE001C"
   } ]
 }

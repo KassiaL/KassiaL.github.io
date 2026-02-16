@@ -215,15 +215,15 @@ var FileLoader = {
 var EngineLoader = {
     arc_sha1: "",
     wasm_sha1: "",
-    wasm_size: 2229880,
+    wasm_size: 2269248,
     wasmjs_sha1: "",
-    wasmjs_size: 286069,
+    wasmjs_size: 288599,
     wasm_pthread_sha1: "",
-    wasm_pthread_size: 2244190,
+    wasm_pthread_size: 2281171,
     wasmjs_pthread_sha1: "",
-    wasmjs_pthread_size: 274378,
+    wasmjs_pthread_size: 276405,
     asmjs_sha1: "",
-    asmjs_size: 4589845,
+    asmjs_size: 4660554,
     wasm_instantiate_progress: 0,
 
     stream_wasm: "false" === "true",
@@ -286,8 +286,9 @@ var EngineLoader = {
                         const error = new Error("Unexpected wasm sha1: " + sha1 + ", expected: " + EngineLoader.getWasmSha1());
                         if (typeof CUSTOM_PARAMETERS["start_error"] === "function") {
                            CUSTOM_PARAMETERS["start_error"](error);
+                        } else {
+                            throw error;
                         }
-                        throw error;
                     }
                 }
                 var wasmInstantiate = WebAssembly.instantiate(new Uint8Array(wasm), imports).then(function(output) {
@@ -297,8 +298,9 @@ var EngineLoader = {
                     console.log('wasm instantiation failed! ' + e);
                     if (typeof CUSTOM_PARAMETERS["start_error"] === "function") {
                         CUSTOM_PARAMETERS["start_error"](e);
+                    } else {
+                        throw e;
                     }
-                    throw e;
                 });
             },
             function(loadedDelta, currentAttempt){
@@ -687,7 +689,11 @@ var GameArchiveLoader = {
                 this.onFileLoaded(file);
             }).catch((e) => {
                 console.log('file verification failed! ' + e);
-                throw e;
+                if (typeof CUSTOM_PARAMETERS["start_error"] === "function") {
+                   CUSTOM_PARAMETERS["start_error"](e);
+                } else {
+                   throw e;
+                }
             });
         }
         // continue loading more pieces of the file
@@ -881,8 +887,8 @@ var Progress = {
 /* ********************************************************************* */
 
 var Module = {
-    engineVersion: "1.11.1",
-    engineSdkSha1: "758dfc0ea71dca26d169fddd0c5a1bc6dd0be4b3",
+    engineVersion: "1.12.1",
+    engineSdkSha1: "16c6fd602f32de4814660672c38ce3ccbbc1fb59",
     noInitialRun: true,
 
     _filesToPreload: [],
