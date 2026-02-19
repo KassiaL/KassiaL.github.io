@@ -1,6 +1,6 @@
 [project]
 title = Universe
-version = 0.0.16
+version = 0.0.17
 publisher = Sergey Kurbyko
 developer = Sergey Kurbyko
 write_log = 0
