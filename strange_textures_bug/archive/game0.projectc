@@ -1,15 +1,14 @@
 [project]
-title = SafePlay
-version = 0.0.36
-publisher = 
-developer = 
+title = Universe
+version = 0.0.17
+publisher = Sergey Kurbyko
+developer = Sergey Kurbyko
 write_log = 0
 write_log_file = 0
 minimum_log_level = 1
 compress_archive = 1
-custom_resources = /assets/textures/dynamic_images
 bundle_resources = res
-title_as_file_name = SafePlay
+title_as_file_name = Universe
 
 [display]
 width = 1080
@@ -17,8 +16,8 @@ height = 1920
 high_dpi = 1
 samples = 0
 fullscreen = 0
-display_profiles = /other/display.display_profilesc
-dynamic_orientation = 1
+display_profiles = /builtins/render/default.display_profilesc
+dynamic_orientation = 0
 update_frequency = 0
 swap_interval = 1
 vsync = 1
@@ -60,7 +59,7 @@ sub_step_count = 4
 
 [bootstrap]
 main_collection = /collections/loader/loader.collectionc
-render = /other/render/render.renderc
+render = /other/render/orthographic.renderc
 debug_init_script = 
 
 [graphics]
@@ -138,21 +137,34 @@ max_count = 128
 max_count = 128
 
 [ios]
-launch_screen = /builtins/manifests/ios/LaunchScreen.storyboardc
+app_icon_76x76 = /assets/icons/76.png
+app_icon_120x120 = /assets/icons/120.png
+app_icon_152x152 = /assets/icons/152.png
+app_icon_167x167 = /assets/icons/167.png
+app_icon_180x180 = /assets/icons/180.png
+icons_asset = /assets/icons/Assets.car
+launch_screen = /assets/icons/LaunchScreen.storyboardc
 pre_renderered_icons = 0
-bundle_identifier = example.unnamed
-bundle_name = 
-infoplist = /builtins/manifests/ios/Info.plist
+bundle_identifier = com.foldplay.universe
+bundle_name = Pocket Universe
+bundle_version = 9
+infoplist = /other/Info.plist
 privacymanifest = /builtins/manifests/ios/PrivacyInfo.xcprivacy
 entitlements = 
 default_language = en
 localizations = en
 
 [android]
-version_code = 1
-minimum_sdk_version = 23
+app_icon_36x36 = /assets/icons/36.png
+app_icon_48x48 = /assets/icons/48.png
+app_icon_72x72 = /assets/icons/72.png
+app_icon_96x96 = /assets/icons/96.png
+app_icon_144x144 = /assets/icons/144.png
+app_icon_192x192 = /assets/icons/192.png
+version_code = 15
+minimum_sdk_version = 26
 target_sdk_version = 35
-package = com.example.safeplay
+package = com.foldplay.universe
 gcm_sender_id = 
 fcm_application_id = 
 manifest = /builtins/manifests/android/AndroidManifest.xml
@@ -178,8 +190,8 @@ localizations = en
 [html5]
 custom_heap_size = 0
 heap_size = 256
-htmlfile = /other/engine_template.html
-cssfile = /other/dark_theme.css
+htmlfile = /engine_template.html
+cssfile = /dark_theme.css
 archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = --verify-graphics-calls=false
@@ -191,8 +203,8 @@ scale_mode = stretch
 transparent_graphics_context = 0
 
 [particle_fx]
-max_particle_count = 1024
-max_particle_buffer_count = 1024
+max_particle_count = 4096
+max_particle_buffer_count = 4096
 max_count = 64
 max_emitter_count = 64
 
@@ -235,8 +247,54 @@ max_time_step = 0.033333
 [font]
 
 [native_extension]
-app_manifest = /other/manifest.appmanifest
+app_manifest = /manifest.appmanifest
 
-[safearea]
-resize_game_view = 0
+[appodeal]
+appodeal_id = 7e28e652e907a2d06eada9ea54d7138d09e2a6043855b403
+admob_android_app_id = ca-app-pub-1933591656142280~3224589167
+
+[liveupdate_reszip]
+preload_file = hd_1.zip
+
+[iap]
+auto_finish_transactions = 0
+
+[gamepush]
+id = 24426
+token = dzliqmuatC3RvP9xSvNSTtMutHDWGu2R
+
+[applovin]
+ios_user_tracking_usage_description = This app uses tracking to provide personalized ads and improve user experience
+bigo_ios = 1
+admob_ios_appid = ca-app-pub-1933591656142280~5512050543
+admob_ios = 1
+chartboost_ios = 1
+dt_exchange_ios = 1
+facebook_ios = 1
+google_ad_manager_ios = 1
+inmobi_ios = 1
+ironsource_ios = 1
+mintegral_ios = 1
+pangle_ios = 1
+unityads_ios = 1
+vungle_ios = 1
+yandex_ios = 1
+admob_android = 1
+bigo_android = 1
+chartboost_android = 1
+dt_exchange_android = 1
+facebook_android = 1
+google_ad_manager_android = 1
+inmobi_android = 1
+ironsource_android = 1
+mintegral_android = 1
+mytarget_android = 1
+pangle_android = 1
+unityads_android = 1
+vungle_android = 1
+yandex_android = 1
+admob_android_appid = ca-app-pub-1933591656142280~3224589167
+
+[sentinel]
+sentry_dsn_html5 = https://92248aa68da23963580ed8541853c874@o4510836940865536.ingest.de.sentry.io/4510836957118544
 
