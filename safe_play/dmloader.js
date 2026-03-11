@@ -215,15 +215,15 @@ var FileLoader = {
 var EngineLoader = {
     arc_sha1: "",
     wasm_sha1: "",
-    wasm_size: 3657085,
+    wasm_size: 3470813,
     wasmjs_sha1: "",
     wasmjs_size: 274761,
     wasm_pthread_sha1: "",
-    wasm_pthread_size: 3660748,
+    wasm_pthread_size: 3474556,
     wasmjs_pthread_sha1: "",
     wasmjs_pthread_size: 263375,
     asmjs_sha1: "",
-    asmjs_size: 6960424,
+    asmjs_size: 6590905,
     wasm_instantiate_progress: 0,
 
     stream_wasm: "false" === "true",

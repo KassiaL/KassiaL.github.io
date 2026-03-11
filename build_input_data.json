@@ -1,6 +1,6 @@
 {
   "project_git" : {
-    "sha1" : "bc36cd4244bd1e753249d2ac15e973f14db1307b",
+    "sha1" : "f3cad3cdc1765eb7298a492075e190d298bc5412",
     "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
@@ -22,9 +22,6 @@
   }, {
     "link" : "https://github.com/d954mas/extension-imgui/archive/master.zip",
     "md5" : "3590467C2B33B4F45EF17B2686F13F7E"
-  }, {
-    "link" : "https://github.com/d954mas/defold-box2d/archive/master.zip",
-    "md5" : "B9D4927DF822E94FD2FD9D1C7886D27F"
   }, {
     "link" : "https://github.com/Insality/defold-tweener/archive/refs/tags/3.zip",
     "md5" : "CFB85626C718FEA631D61A22BF55E70C"
