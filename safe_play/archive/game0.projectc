@@ -1,6 +1,6 @@
 [project]
 title = SafePlay
-version = 0.0.45
+version = 0.0.46
 publisher = 
 developer = 
 write_log = 0
@@ -236,6 +236,21 @@ max_time_step = 0.033333
 
 [native_extension]
 app_manifest = /other/manifest.appmanifest
+
+[defos]
+view_width = -1
+view_height = -1
+view_x = -1
+view_y = -1
+
+[websocket]
+buffer_size = 65536
+max_connections = 2
+debug = disabled
+socket_timeout = 500000
+
+[ecs_console]
+websocket_url = ws://127.0.0.1:8001
 
 [safearea]
 resize_game_view = 0
