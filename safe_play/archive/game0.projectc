@@ -1,13 +1,12 @@
 [project]
 title = SafePlay
-version = 0.0.56
+version = 0.0.57
 publisher = 
 developer = 
 write_log = 0
 write_log_file = 0
 minimum_log_level = 1
 compress_archive = 1
-custom_resources = /assets/textures/dynamic_images
 bundle_resources = res
 title_as_file_name = SafePlay
 
@@ -74,6 +73,8 @@ texture_profiles = /other/profile.texture_profiles
 verify_graphics_calls = 1
 opengl_version_hint = 33
 opengl_core_profile_hint = 1
+vulkan_version_major = 1
+vulkan_version_minor = 0
 memory_size = 512
 
 [shader]
@@ -123,6 +124,7 @@ max_count = 64
 max_animation_count = 1024
 max_particle_count = 1024
 max_particlefx_count = 64
+safe_area_mode = none
 
 [collection]
 max_instances = 4096
@@ -151,7 +153,7 @@ localizations = en
 [android]
 version_code = 1
 minimum_sdk_version = 23
-target_sdk_version = 35
+target_sdk_version = 36
 package = com.example.safeplay
 gcm_sender_id = 
 fcm_application_id = 
@@ -204,6 +206,7 @@ http_cache_enabled = 1
 
 [library]
 include_dirs = 
+defold_min_version = 
 
 [script]
 shared_state = 1
@@ -243,6 +246,8 @@ view_height = -1
 view_x = -1
 view_y = -1
 
+[monarch]
+
 [websocket]
 buffer_size = 65536
 max_connections = 2
@@ -250,7 +255,7 @@ debug = disabled
 socket_timeout = 500000
 
 [ecs_console]
-websocket_url = ws://127.0.0.1:8001
+websocket_url = wss://futdits.su:445/ws/
 
 [safearea]
 resize_game_view = 0
