@@ -1,6 +1,6 @@
 [project]
 title = SafePlay
-version = 0.0.70
+version = 0.0.71
 publisher = 
 developer = 
 write_log = 0
@@ -88,7 +88,7 @@ max_sound_data = 128
 max_sound_buffers = 32
 max_sound_sources = 16
 max_sound_instances = 256
-max_component_count = 64
+max_component_count = 128
 sample_frame_count = 0
 use_thread = 1
 stream_enabled = 0
@@ -248,6 +248,9 @@ view_x = -1
 view_y = -1
 
 [monarch]
+
+[spine]
+max_count = 128
 
 [websocket]
 buffer_size = 65536

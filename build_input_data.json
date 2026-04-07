@@ -1,6 +1,6 @@
 {
   "project_git" : {
-    "sha1" : "1e601b72e4e36b5b3eb6e5e3c7e24c2d8edb7f80",
+    "sha1" : "81da496f4a9e04d21e1d372cd91954cca879174d",
     "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
@@ -22,6 +22,9 @@
   }, {
     "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
     "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
+  }, {
+    "link" : "https://github.com/defold/extension-spine/archive/refs/tags/4.4.1.zip",
+    "md5" : "39A02C760B8EFA656C3D7E9B3A713A01"
   }, {
     "link" : "https://github.com/Insality/defold-tweener/archive/refs/tags/3.zip",
     "md5" : "CFB85626C718FEA631D61A22BF55E70C"
