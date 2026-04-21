@@ -73,10 +73,14 @@ texture_profiles = /other/profile.texture_profiles
 verify_graphics_calls = 1
 opengl_version_hint = 33
 opengl_core_profile_hint = 1
+vulkan_version_major = 1
+vulkan_version_minor = 0
 memory_size = 512
 
 [shader]
 output_spirv = 0
+glsl_es_default_precision_float = mediump
+glsl_es_default_precision_int = highp
 
 [sound]
 gain = 1
@@ -117,11 +121,15 @@ max_bone_matrix_texture_height = 1024
 [mesh]
 max_count = 128
 
+[light]
+max_count = 64
+
 [gui]
 max_count = 64
 max_animation_count = 1024
 max_particle_count = 1024
 max_particlefx_count = 64
+safe_area_mode = none
 
 [collection]
 max_instances = 4096
@@ -163,7 +171,7 @@ app_icon_144x144 = /assets/icons/144.png
 app_icon_192x192 = /assets/icons/192.png
 version_code = 15
 minimum_sdk_version = 26
-target_sdk_version = 35
+target_sdk_version = 36
 package = com.foldplay.universe
 gcm_sender_id = 
 fcm_application_id = 
@@ -216,6 +224,7 @@ http_cache_enabled = 1
 
 [library]
 include_dirs = 
+defold_min_version = 
 
 [script]
 shared_state = 1
@@ -229,9 +238,11 @@ track_cpu = 0
 enabled = 1
 sleep_between_server_updates = 0
 performance_timeline_enabled = 0
+max_sample_count = 4096
 
 [liveupdate]
 enabled = 1
+exclude_entries_from_main_manifest = 1
 settings = /liveupdate.settings
 mount_on_start = 0
 
@@ -248,6 +259,8 @@ max_time_step = 0.033333
 
 [native_extension]
 app_manifest = /manifest.appmanifest
+
+[monarch]
 
 [appodeal]
 appodeal_id = 7e28e652e907a2d06eada9ea54d7138d09e2a6043855b403
