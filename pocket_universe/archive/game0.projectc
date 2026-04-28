@@ -1,6 +1,6 @@
 [project]
 title = Universe
-version = 0.0.20
+version = 0.0.23
 publisher = Sergey Kurbyko
 developer = Sergey Kurbyko
 write_log = 0
@@ -73,10 +73,14 @@ texture_profiles = /other/profile.texture_profiles
 verify_graphics_calls = 1
 opengl_version_hint = 33
 opengl_core_profile_hint = 1
+vulkan_version_major = 1
+vulkan_version_minor = 0
 memory_size = 512
 
 [shader]
 output_spirv = 0
+glsl_es_default_precision_float = mediump
+glsl_es_default_precision_int = highp
 
 [sound]
 gain = 1
@@ -113,15 +117,21 @@ max_count = 128
 split_meshes = 0
 max_bone_matrix_texture_width = 1024
 max_bone_matrix_texture_height = 1024
+max_morph_target_texture_width = 1024
+max_morph_target_texture_height = 1024
 
 [mesh]
 max_count = 128
+
+[light]
+max_count = 64
 
 [gui]
 max_count = 64
 max_animation_count = 1024
 max_particle_count = 1024
 max_particlefx_count = 64
+safe_area_mode = none
 
 [collection]
 max_instances = 4096
@@ -161,9 +171,9 @@ app_icon_72x72 = /assets/icons/72.png
 app_icon_96x96 = /assets/icons/96.png
 app_icon_144x144 = /assets/icons/144.png
 app_icon_192x192 = /assets/icons/192.png
-version_code = 18
+version_code = 21
 minimum_sdk_version = 26
-target_sdk_version = 35
+target_sdk_version = 36
 package = com.foldplay.universe
 gcm_sender_id = 
 fcm_application_id = 
@@ -216,6 +226,7 @@ http_cache_enabled = 1
 
 [library]
 include_dirs = 
+defold_min_version = 
 
 [script]
 shared_state = 1
@@ -229,9 +240,11 @@ track_cpu = 0
 enabled = 1
 sleep_between_server_updates = 0
 performance_timeline_enabled = 0
+max_sample_count = 4096
 
 [liveupdate]
 enabled = 1
+exclude_entries_from_main_manifest = 1
 settings = /liveupdate.settings
 mount_on_start = 0
 
@@ -255,6 +268,8 @@ purchase_event_token = pcq0ub
 
 [applovin]
 
+[monarch]
+
 [appodeal]
 appodeal_id = 7e28e652e907a2d06eada9ea54d7138d09e2a6043855b403
 admob_android_app_id = ca-app-pub-1933591656142280~3224589167
@@ -270,5 +285,5 @@ id = 24426
 token = dzliqmuatC3RvP9xSvNSTtMutHDWGu2R
 
 [sentinel]
-sentry_dsn_html5 = https://92248aa68da23963580ed8541853c874@o4510836940865536.ingest.de.sentry.io/4510836957118544
+sentry_dsn_html5 = https://5752b2a332a7233d0982bb11515a99af@o4510836940865536.ingest.de.sentry.io/4511274182049872
 

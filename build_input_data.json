@@ -1,15 +1,15 @@
 {
   "project_git" : {
-    "sha1" : "bbbb132bfeca4a199b958e8e40bc0fc796d5fffd",
+    "sha1" : "108740f1787477dd048c12170b0659a31f19c51a",
     "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
   "bob_arguments" : {
-    "sha1" : "69145457f80a3f96edee1080184744c227dc13d2",
-    "version" : "1.12.4",
-    "timestamp" : "2026-04-14 10:52:18"
+    "sha1" : "4bea51a98ab77678fd091d6e06d13c5cf5e01ca7",
+    "version" : "1.12.3",
+    "timestamp" : "2026-04-07 11:16:11"
   },
-  "defold_sdk" : "69145457f80a3f96edee1080184744c227dc13d2",
+  "defold_sdk" : "4bea51a98ab77678fd091d6e06d13c5cf5e01ca7",
   "dependencies" : [ {
     "link" : "https://github.com/subsoap/defos/archive/refs/tags/v2.8.6.zip",
     "md5" : "88DEEBE7714DF42D93AE20AEA124C4E1"
@@ -18,7 +18,7 @@
     "md5" : "575D68D7E843B74BFBBC39F3847395AB"
   }, {
     "link" : "https://github.com/britzl/monarch/archive/master.zip",
-    "md5" : "C39D01EC2D59B4DD70DBFB95C5A41E3E"
+    "md5" : "1DF3292245310DCEFF2988CFC098AE2C"
   }, {
     "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
     "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
