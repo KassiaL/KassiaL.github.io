@@ -1,15 +1,15 @@
 {
   "project_git" : {
-    "sha1" : "05fed0f9ad78864ed665eea2ca39fd861bedd46a",
+    "sha1" : "25bbd52f1edc18a5ec471bd506e32d5e1fa26178",
     "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
   "bob_arguments" : {
-    "sha1" : "4bea51a98ab77678fd091d6e06d13c5cf5e01ca7",
-    "version" : "1.12.3",
-    "timestamp" : "2026-04-07 11:16:11"
+    "sha1" : "402218d5544666871f07ecdfa21032a7fb59413f",
+    "version" : "1.12.4",
+    "timestamp" : "2026-05-04 09:07:33"
   },
-  "defold_sdk" : "4bea51a98ab77678fd091d6e06d13c5cf5e01ca7",
+  "defold_sdk" : "402218d5544666871f07ecdfa21032a7fb59413f",
   "dependencies" : [ {
     "link" : "https://github.com/subsoap/defos/archive/refs/tags/v2.8.6.zip",
     "md5" : "88DEEBE7714DF42D93AE20AEA124C4E1"

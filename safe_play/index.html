@@ -5,17 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui, shrink-to-fit=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
-	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>SafePlay 0.0.78</title>
+	<title>SafePlay 0.0.85</title>
 	<style type='text/css'>
-	/* Disable user selection to avoid strange bug in Chrome on Windows:
-	* Selecting a text outside the canvas, then clicking+draging would
-	* drag the selected text but block mouse down/up events to the engine.
-	*/
 	body {
 	
-		position: fixed; /* Prevent overscroll */
+		position: fixed;
 	
 		margin:0;
 		padding:0;
@@ -31,7 +26,6 @@
 	}
 
 	.canvas-app-container:-webkit-full-screen {
-		/* Auto width and height in Safari/Chrome fullscreen. */
 		width: auto;
 		height: auto;
 	}
@@ -66,422 +60,150 @@
 
 	.canvas-app-progress {
 	display: none;
-	/* position: fixed;
-	top: calc(50% + 100px);
-	left: 50%; 
-	transform: translate(-50%, -50%);
-	background-color: #1a1a1a;
-	border-radius: 15px;
-	overflow: hidden;
-	box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-	width: 300px;
-	height: 25px;
-	box-shadow: 
-		inset 0 0 12px rgba(0,0,0,0.4),
-		0 0 20px rgba(15, 255, 0, 0.2); 
-	border: 1px solid rgba(15, 255, 0, 0.3); */
 }
 
 .canvas-app-progress-bar {
 	display: none;
-	/* position: relative;
-	font-size: 12px;
-	height: 100%;
-	width: 0%;
-	background-color: #0fff00;
-	border-radius: 15px;
-	text-align: center;
-	line-height: 20px;
-	transition: width 1s ease;
-	transform: none !important;
-	background: linear-gradient(
-		90deg,
-		rgba(15, 255, 0, 1) 0%,
-		rgba(100, 255, 50, 1) 100%
-	); 
-	box-shadow: 
-		inset 0 2px 4px rgba(255,255,255,0.3),
-		0 0 15px rgba(15, 255, 0, 0.4); 
-	position: relative;
-	overflow: hidden; */
 }
 
-	body {
-		background-color: #000000;
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	}
+@font-face {
+	font-family: 'SafePlayShantell';
+	src: url('ShantellSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
 
-	.canvas-app-container {
-		background: linear-gradient(to bottom,
-					#ffffff 0%,
-					#f0f0f0 30%,
-					#cacaca 100%);
-					background-repeat: no-repeat;
-			background-attachment: fixed;
-	}
+html {
+	background: #b2c2b8;
+}
 
-	.canvas-app-canvas {
-		background-repeat:no-repeat;
-		background-position: center center;
-	}
+body {
+	background-color: #000000;
+	font-family: 'SafePlayShantell', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-	.progress-container {
-		position: fixed;
-		top: calc(50%);
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-	}
+.canvas-app-container {
+	background: linear-gradient(180deg, #fefefe 0%, #b2c2b8 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
-	.progress-bar {
-		width: 80vw;
-		max-width: 420px;
-		min-width: 280px;
-		height: 30px;
-		background: linear-gradient(to bottom, #e6e6e6, #dbdbdb);
-		/* Почти как фон, но чуть темнее */
-		border-radius: 100px;
-		position: relative;
-		margin-bottom: 14px;
-		overflow: visible;
-		z-index: 1;
+.canvas-app-canvas {
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
-		box-shadow:
-			inset 0 1px 1px rgba(0, 0, 0, 0.1);
-	}
+.progress-container {
+	position: fixed;
+	inset: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	overflow: hidden;
+	pointer-events: none;
+	box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.27);
+}
 
+.progress-icon {
+	position: absolute;
+	left: 50%;
+	bottom: 18.4%;
+	width: 15.4167vh;
+	height: 15.4167vh;
+	transform: translateX(-50%);
+	object-fit: contain;
+	image-rendering: auto;
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.18));
+}
 
-	.progress-fill {
-		width: 8%;
-		height: 34px;
-		/* larger than bar */
-		background: linear-gradient(to bottom, #e1f1d1, #b7d1ab);
-		border-radius: 100px;
-		position: absolute;
-		top: -2px;
-		/* slightly lower */
-		left: 0;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-		transition: width 0.4s ease;
-		z-index: 2;
-		box-shadow:
-			inset 0 -1px 1px rgba(0, 0, 0, 0.1),
-			inset 0 2px 1px rgba(255, 255, 255, 0.1),
-			0 6px 13px rgba(0, 0, 0, 0.2);
-	}
+.loader-line {
+	position: absolute;
+	left: 50%;
+	width: 45.2604vh;
+	height: 0.1563vh;
+	transform: translateX(-50%);
+	border-radius: 999px;
+	background: rgba(53, 48, 43, 0.7);
+}
 
-	.tooltip-box {
-		position: absolute;
-		top: -40px;
-		right: 0;
-		transform: translateX(15%);
-		z-index: 10;
-		filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
-		/* общая тень */
-	}
+.loader-line-top {
+	bottom: calc(14.6354% + 3.4896vh + 0.7032vh);
+}
 
-	.progress-tooltip {
-		background: #f0f0f0;
-		padding: 4px 10px;
-		border-radius: 6px;
-		font-size: 12px;
-		color: #444;
-		white-space: nowrap;
-		z-index: 11;
-	}
+.loader-line-bottom {
+	bottom: calc(14.6354% - 0.8594vh);
+}
 
-	.tooltip-arrow {
-		position: absolute;
-		bottom: -8px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 0;
-		height: 0;
-		border-left: 12px solid transparent;
-		border-right: 12px solid transparent;
-		border-top: 12px solid #f0f0f0;
-		z-index: 12;
-	}
+.progress-bar {
+	position: absolute;
+	left: 50%;
+	bottom: 14.6354%;
+	width: 45.2083vh;
+	height: 3.4896vh;
+	transform: translateX(-50%);
+	overflow: visible;
+}
 
+.progress-track {
+	position: absolute;
+	inset: 0;
+	background: rgba(53, 44, 42, 0.8);
+	border-radius: 999px;
+	box-shadow:
+		0 4px 4px rgba(0, 0, 0, 0.25),
+		inset 0 4px 4px rgba(0, 0, 0, 0.25),
+		inset 0 0 0 3px rgba(56, 54, 54, 0.31);
+}
 
+.progress-fill {
+	position: absolute;
+	left: -0.12%;
+	bottom: -0.0521vh;
+	width: 8%;
+	height: 3.6458vh;
+	background-color: #5eb956;
+	border-radius: 999px;
+	box-shadow:
+		0 1px 4px rgba(0, 0, 0, 0.25),
+		inset 0 6px 4px rgba(224, 255, 202, 0.25),
+		inset 0 -2px 4px rgba(0, 0, 0, 0.25);
+	transition: width 0.4s ease;
+}
 
-	.loading-text {
-		font-size: 17px;
-		font-weight: bold;
-		color: #555;
-		line-height: 1.1;
-	}
+.loading-text {
+	position: absolute;
+	left: 50%;
+	bottom: 7.1%;
+	transform: translateX(-50%);
+	color: rgba(57, 52, 47, 0.92);
+	font-family: 'SafePlayShantell', cursive;
+	font-size: clamp(24px, 3.9vh, 75px);
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 0;
+	white-space: nowrap;
+}
 
-	.loading-text span {
-		font-size: 11px;
-		font-weight: normal;
-		color: #999;
-	}
+.loading-text span {
+	display: none;
+}
 
-	@keyframes spring-bounce {
-		0% {
-			transform: translateY(0) scale(1);
-		}
-
-		20% {
-			transform: translateY(-25px) scale(1.05);
-		}
-
-		40% {
-			transform: translateY(0) scale(0.97);
-		}
-
-		60% {
-			transform: translateY(-12px) scale(1.02);
-		}
-
-		80% {
-			transform: translateY(0) scale(1);
-		}
-
-		100% {
-			transform: translateY(0) scale(1);
-		}
-	}
-
-	.progress-icon {
-		width: 100px;
-		height: 100px;
-		margin-bottom: 35px;
-		image-rendering: auto;
-		animation: spring-bounce 1.6s infinite cubic-bezier(0.33, 0.67, 0.67, 1);
-		filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
-	}
-
-	@font-face {
-		font-family: 'SafePlayShantell';
-		src:
-			url('ShantellSans-Regular.ttf') format('truetype'),
-			url('web/ShantellSans-Regular.ttf') format('truetype');
-		font-weight: 400;
-		font-style: normal;
-		font-display: block;
-	}
-
-	html,
-	body,
-	.canvas-app-container {
-		width: 100vw;
-		height: 100vh;
-		min-height: 100vh;
-		overflow: hidden;
-	}
-
-	body {
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: linear-gradient(180deg, #fefefe 0%, #b2c2b8 100%);
-	}
-
-	html {
-		background: #b2c2b8;
-	}
-
-	.safeplay-loader {
-		--safeplay-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='3' stitchTiles='stitch' seed='1664'/%3E%3C/filter%3E%3Crect width='128' height='128' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
-		--safeplay-progress-texture: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='64' viewBox='0 0 128 64'%3E%3Cfilter id='t' x='-20%25' y='-40%25' width='140%25' height='180%25' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.25 0.25' numOctaves='3' seed='1473' result='textureNoise'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='textureNoise' scale='8' xChannelSelector='R' yChannelSelector='G'/%3E%3C/filter%3E%3Crect x='-8' y='-8' width='144' height='80' fill='%235EB956' filter='url(%23t)'/%3E%3C/svg%3E");
-		--line-left: 9.895%;
-		--line-width: 80.166%;
-		--line-top-before: 81.029%;
-		--line-top-after: 86.071%;
-		--bar-left: 9.963%;
-		--bar-top: 81.705%;
-		--bar-width: 80.074%;
-		--bar-height: 3.482%;
-		--mouse-left: 36.347%;
-		--mouse-top: 67.256%;
-		--mouse-width: 27.306%;
-		--mouse-height: 15.385%;
-		--text-top: 88.95%;
-		position: fixed;
-		inset: 0;
-		width: 100vw;
-		height: 100vh;
-		z-index: 10;
-		overflow: hidden;
-		background: linear-gradient(180deg, #fefefe 0%, #b2c2b8 100%);
-		opacity: 1;
-		pointer-events: none;
-		transition: opacity 0.25s ease;
-	}
-
-	.safeplay-loader::before {
-		content: "";
-		position: absolute;
-		inset: 0;
-		background-image: var(--safeplay-noise);
-		background-size: 128px 128px;
-		mix-blend-mode: multiply;
-		opacity: 0.12;
-		pointer-events: none;
-	}
-
-	.safeplay-loader.is-hidden {
-		opacity: 0;
-	}
-
-	.safeplay-loader-line {
-		position: absolute;
-		left: var(--line-left);
-		width: var(--line-width);
-		height: 3px;
-		border-radius: 999px;
-		background: rgba(53, 48, 43, 0.7);
-		z-index: 2;
-	}
-
-	.safeplay-loader-line-before {
-		top: var(--line-top-before);
-	}
-
-	.safeplay-loader-line-after {
-		top: var(--line-top-after);
-	}
-
-	.safeplay-progress-track {
-		position: absolute;
-		left: var(--bar-left);
-		top: var(--bar-top);
-		width: var(--bar-width);
-		height: var(--bar-height);
-		min-height: 24px;
-		border-radius: 999px;
-		overflow: hidden;
-		background: rgba(53, 44, 42, 0.8);
-		z-index: 3;
-		box-shadow:
-			0 4px 4px rgba(0, 0, 0, 0.25),
-			inset 0 4px 4px rgba(0, 0, 0, 0.25),
-			inset 0 0 0 3px rgba(56, 54, 54, 0.31);
-	}
-
-	.safeplay-progress-track::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		background-image: var(--safeplay-noise);
-		background-size: 64px 64px;
-		mix-blend-mode: soft-light;
-		opacity: 0.28;
-		pointer-events: none;
-	}
-
-	.safeplay-progress-fill {
-		width: 0%;
-		height: 100%;
-		position: relative;
-		border-radius: 999px;
-		background-color: #5eb956;
-		background-image:
-			var(--safeplay-progress-texture),
-			linear-gradient(180deg, rgba(224, 255, 202, 0.18), rgba(46, 114, 40, 0.18));
-		background-size: 96px 100%, 100% 100%;
-		box-shadow:
-			0 1px 4px rgba(0, 0, 0, 0.25),
-			inset 0 6px 4px rgba(224, 255, 202, 0.25),
-			inset 0 -2px 4px rgba(0, 0, 0, 0.25);
-		will-change: width;
-	}
-
-	.safeplay-progress-fill::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		background-image: var(--safeplay-noise);
-		background-size: 48px 48px;
-		mix-blend-mode: multiply;
-		opacity: 0.22;
-		pointer-events: none;
-	}
-
-	.safeplay-mouse-animation {
-		position: absolute;
-		left: var(--mouse-left);
-		top: var(--mouse-top);
-		width: var(--mouse-width);
-		height: var(--mouse-height);
-		object-fit: contain;
-		z-index: 2;
-	}
-
-	.safeplay-mouse-frame {
-		position: absolute;
-		inset: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		opacity: 0;
-	}
-
-	.safeplay-mouse-frame.is-active {
-		opacity: 1;
-	}
-
-	.safeplay-loader-text {
-		position: absolute;
-		left: 50%;
-		top: var(--text-top);
-		transform: translateX(-50%);
-		color: rgba(57, 52, 47, 0.92);
-		font-family: 'SafePlayShantell', cursive;
-		font-size: clamp(24px, 3.2vh, 58px);
-		line-height: 1;
-		white-space: nowrap;
-		z-index: 2;
-	}
-
-	@media (orientation: landscape) {
-		.safeplay-loader {
-			--line-left: 27.405%;
-			--line-width: 45.168%;
-			--line-top-before: 74.446%;
-			--line-top-after: 83.395%;
-			--bar-left: 27.443%;
-			--bar-top: 75.646%;
-			--bar-width: 45.114%;
-			--bar-height: 6.181%;
-			--mouse-left: 42.308%;
-			--mouse-top: 50%;
-			--mouse-width: 15.385%;
-			--mouse-height: 27.306%;
-			--text-top: 87.45%;
-		}
-
-		.safeplay-loader-text {
-			font-size: clamp(24px, 5vh, 58px);
-		}
-	}
 	</style>
 </head>
 
 <body>
 
 	<div id="app-container" class="canvas-app-container">
-		<div id="safeplay-loader" class="safeplay-loader">
-			<div class="safeplay-loader-line safeplay-loader-line-before"></div>
-			<div id="safeplay-mouse-animation" class="safeplay-mouse-animation">
-				<img class="safeplay-mouse-frame is-active" src="mouse_animation/1.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/2.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/3.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/4.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/5.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/6.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/7.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/8.webp" alt=" " />
-				<img class="safeplay-mouse-frame" src="mouse_animation/9.webp" alt=" " />
+		<div class="progress-container">
+			<img id="randomImage" src="mouse_animation/1.webp" class="progress-icon" alt=" " />
+			<div class="loader-line loader-line-top"></div>
+			<div class="progress-bar">
+				<div class="progress-track"></div>
+				<div class="progress-fill"></div>
 			</div>
-			<div class="safeplay-progress-track">
-				<div id="safeplay-progress-fill" class="safeplay-progress-fill"></div>
-			</div>
-			<div class="safeplay-loader-line safeplay-loader-line-after"></div>
-			<div class="safeplay-loader-text">Загрузка...</div>
+			<div class="loader-line loader-line-bottom"></div>
+			<div class="loading-text" id="loading-text">Загрузка...<span id="loading-text-span"></span></div>
 		</div>
 
 		<div id="running-from-file-warning" style="display: none; margin: 3em;">
@@ -495,125 +217,89 @@
 		</div>
 		<div id="canvas-container" class="canvas-app-canvas-container">
 			<canvas id="canvas" class="canvas-app-canvas" tabindex="1" width="1080" height="1920"></canvas>
-
 		</div>
 	</div>
 	<script>
 		window.my_vk_app_link = "https://kassial.github.io/sticker_ball/"
 		window.image_base_64 = ""
+
+		function getPreferredLanguage() {
+			const supportedLanguages = ['en', 'ru', 'tr', 'pt', 'es', 'pt-br'];
+			const normalizedSupported = supportedLanguages.map(lang => lang.toLowerCase());
+			const browserLangs = navigator.languages || [navigator.language || 'en'];
+			for (const lang of browserLangs) {
+				const [baseLang, region] = lang.toLowerCase().split(/[-_]/);
+				const fullLang = region ? `${baseLang}-${region}` : baseLang;
+				const exactMatchIndex = normalizedSupported.indexOf(fullLang);
+				if (exactMatchIndex !== -1) {
+					return supportedLanguages[exactMatchIndex];
+				}
+				const baseMatchIndex = normalizedSupported.indexOf(baseLang);
+				if (baseMatchIndex !== -1) {
+					return supportedLanguages[baseMatchIndex];
+				}
+			}
+			return 'en';
+		}
+
+		function getAnimationFramePaths() {
+			return [
+				'mouse_animation/1.webp',
+				'mouse_animation/2.webp',
+				'mouse_animation/3.webp',
+				'mouse_animation/4.webp',
+				'mouse_animation/5.webp',
+				'mouse_animation/6.webp',
+				'mouse_animation/7.webp',
+				'mouse_animation/8.webp',
+				'mouse_animation/9.webp'
+			];
+		}
+
+		function loadAnimationFrame(path) {
+			return new Promise(resolve => {
+				const image = new Image();
+				image.onload = () => resolve(image);
+				image.src = path;
+			});
+		}
+
+		function startMouseAnimation(images) {
+			const img = document.getElementById("randomImage");
+			let frame = 0;
+			setInterval(() => {
+				frame = (frame + 1) % images.length;
+				img.src = images[frame].src;
+			}, 100);
+		}
+
+		document.addEventListener("DOMContentLoaded", () => {
+			const img = document.getElementById("randomImage");
+			img.src = "mouse_animation/1.webp";
+
+			const lang = getPreferredLanguage();
+			const loadingTextSpan = document.getElementById("loading-text-span");
+			loadingTextSpan.innerHTML = "";
+
+			Promise.all(getAnimationFramePaths().map(loadAnimationFrame)).then(startMouseAnimation);
+		});
 	</script>
 
 	<script id='engine-loader' type='text/javascript' src="dmloader.js"></script>
 
-
 	<script id='engine-setup' type='text/javascript'>
 
-		const SAFEPLAY_MOUSE_ANIMATION_FPS = 30;
-		const SAFEPLAY_MOUSE_FRAME_COUNT = 9;
-		const SAFEPLAY_MOUSE_FRAME_PATH = 'mouse_animation/{frame}.webp';
-		const SAFEPLAY_PROGRESS_SPEED = 180;
-		let safeplayDisplayedProgress = 0;
-		let safeplayTargetProgress = 0;
-		let safeplayProgressFrame = 0;
-		let safeplayProgressLastTime = 0;
-		let safeplayMouseFrame = 0;
-		let safeplayMouseFrameRequest = 0;
-		let safeplayMouseLastTime = 0;
-		let safeplayMouseFrameTime = 0;
-		let safeplayMouseFrames = [];
-
-		function safeplayClampProgress(progress) {
-			return Math.max(0, Math.min(100, progress));
-		}
-
-		function safeplaySetProgress(progress) {
-			const fill = document.getElementById('safeplay-progress-fill');
-			fill.style.width = `${progress}%`;
-		}
-
-		function safeplayHideLoader() {
-			const loader = document.getElementById('safeplay-loader');
-			loader.classList.add('is-hidden');
-			if (safeplayMouseFrameRequest) {
-				cancelAnimationFrame(safeplayMouseFrameRequest);
-				safeplayMouseFrameRequest = 0;
-			}
-		}
-
-		function safeplayAnimateProgress(time) {
-			if (!safeplayProgressLastTime) {
-				safeplayProgressLastTime = time;
-			}
-			const deltaTime = (time - safeplayProgressLastTime) / 1000;
-			const progressDelta = safeplayTargetProgress - safeplayDisplayedProgress;
-			const progressStep = SAFEPLAY_PROGRESS_SPEED * deltaTime;
-			safeplayProgressLastTime = time;
-			if (Math.abs(progressDelta) <= progressStep) {
-				safeplayDisplayedProgress = safeplayTargetProgress;
-			}
-			else {
-				safeplayDisplayedProgress += Math.sign(progressDelta) * progressStep;
-			}
-			safeplaySetProgress(safeplayDisplayedProgress);
-			if (safeplayDisplayedProgress === safeplayTargetProgress) {
-				safeplayProgressFrame = 0;
-				safeplayProgressLastTime = 0;
-				if (safeplayTargetProgress >= 100) {
-					safeplayHideLoader();
-				}
-				return;
-			}
-			safeplayProgressFrame = requestAnimationFrame(safeplayAnimateProgress);
-		}
-
-		function safeplayStartProgressAnimation() {
-			if (!safeplayProgressFrame) {
-				safeplayProgressFrame = requestAnimationFrame(safeplayAnimateProgress);
-			}
-		}
-
-		function safeplaySetMouseFrame(frame) {
-			safeplayMouseFrames[safeplayMouseFrame].classList.remove('is-active');
-			safeplayMouseFrame = frame;
-			safeplayMouseFrames[safeplayMouseFrame].classList.add('is-active');
-		}
-
-		function safeplayAnimateMouse(time) {
-			if (!safeplayMouseLastTime) {
-				safeplayMouseLastTime = time;
-			}
-			safeplayMouseFrameTime += Math.min(time - safeplayMouseLastTime, 100);
-			safeplayMouseLastTime = time;
-			const frameDuration = 1000 / SAFEPLAY_MOUSE_ANIMATION_FPS;
-			while (safeplayMouseFrameTime >= frameDuration) {
-				safeplayMouseFrameTime -= frameDuration;
-				safeplaySetMouseFrame((safeplayMouseFrame + 1) % SAFEPLAY_MOUSE_FRAME_COUNT);
-			}
-			safeplayMouseFrameRequest = requestAnimationFrame(safeplayAnimateMouse);
-		}
-
-		function safeplayStartMouseAnimation() {
-			safeplayMouseFrames = Array.from(document.querySelectorAll('.safeplay-mouse-frame'));
-			for (let frame = 1; frame <= SAFEPLAY_MOUSE_FRAME_COUNT; frame++) {
-				const image = new Image();
-				image.src = SAFEPLAY_MOUSE_FRAME_PATH.replace('{frame}', frame);
-			}
-			safeplayMouseFrameRequest = requestAnimationFrame(safeplayAnimateMouse);
-		}
-
-		safeplayStartMouseAnimation();
-
 		CUSTOM_PARAMETERS['update_progress'] = function (progress) {
-			safeplayTargetProgress = safeplayClampProgress(progress);
-			safeplayStartProgressAnimation();
-		}
+			const fill = document.querySelector('.progress-fill');
+			let fill_percent = 8 + (progress * (92 / 100));
+			fill_percent = Math.floor(fill_percent);
+			fill.style.width = fill_percent + '%';
+		};
 	</script>
-
 
 	<script id='engine-start' type='text/javascript'>
 		var runningFromFileWarning = document.getElementById("running-from-file-warning");
 		if (window.location.href.startsWith("file://")) {
-			safeplayHideLoader();
 			runningFromFileWarning.style.display = "block";
 		}
 		else {
