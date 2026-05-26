@@ -1,5 +1,5 @@
 {
-    "version": "1779779284",
+    "version": "1779793994",
     "collections": [
         "animal_quiz_fons_jpg_africa",
         "animal_quiz_fons_jpg_city",
@@ -347,8 +347,8 @@
                 80
             ]
         ],
-        "common_68f61bc08fd3fdff": [
-            "29a20c62e4ac741c",
+        "common_28a5b802cd3cbf66": [
+            "1aaad90b2ff56f2c",
             [
                 71,
                 76
@@ -604,7 +604,7 @@
             "908454318f20c375"
         ],
         "jigsaw_jpg_6_texture": [
-            "1d03c9a323fe8b90",
+            "166de642c5060ff9",
             [
                 26
             ]
@@ -676,7 +676,7 @@
             "fc7b336d03896987"
         ],
         "jigsaw_jpg_14_texture": [
-            "d96358778943d14b",
+            "c8a557a302cc518a",
             [
                 34
             ]
@@ -703,7 +703,7 @@
             "5164da1ff31fb5d6"
         ],
         "slidepuzzle_jpg_2_texture": [
-            "8d925fcdc1a16a47",
+            "b2660c2a6419d080",
             [
                 37
             ]
@@ -979,7 +979,7 @@
             ]
         ],
         "jigsaw": [
-            "c4f07c9761f59f6d"
+            "e21ed1cc0350e2f3"
         ],
         "jigsaw_texture": [
             "f325ba124712245a",
@@ -1062,7 +1062,7 @@
     },
     "dmanifest_info": {
         "signature": "",
-        "archive_identifier": "e572d41fb1b22a6046ccd3db9fdde191",
+        "archive_identifier": "0db3bb7f11a468c796c4cc1f6599eaec",
         "version": 5,
         "header": {
             "resource_hash_algorithm": "HASH_SHA1",
