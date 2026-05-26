@@ -1,6 +1,6 @@
 {
   "project_git" : {
-    "sha1" : "e6e0ee0d6fb793a15a3460e0ce03abf922fd767d",
+    "sha1" : "35566bbfd26764b7adbae7a38e46547e35a54f8f",
     "origin" : "https://github.com/Anisin/SafePlay.git",
     "branch" : "main"
   },
@@ -18,7 +18,7 @@
     "md5" : "575D68D7E843B74BFBBC39F3847395AB"
   }, {
     "link" : "https://github.com/britzl/monarch/archive/master.zip",
-    "md5" : "A309446F8D1DD12A2111D85D5D49482A"
+    "md5" : "9B6E9F1E965036A87E13275BBEBDF45F"
   }, {
     "link" : "https://github.com/Insality/defold-event/archive/refs/tags/11.zip",
     "md5" : "F68DFD1693B89DB340FD5C231609CE9F"
